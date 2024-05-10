@@ -297,7 +297,7 @@ a {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("res/img/down-arrow.png") no-repeat;
+  background: url("res/down-arrow.png") no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
