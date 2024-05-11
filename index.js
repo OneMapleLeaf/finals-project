@@ -13,15 +13,15 @@ const openShowCase = () => {
 
 document.addEventListener('click', e => {
   const isDropdownButton = e.target.matches('#dropdown_btn');
-  console.log('Clicked element: ', e.target); // Logs the clicked element
-  console.log('Is dropdown button: ', isDropdownButton);
+  // console.log('Clicked element: ', e.target); 
+  // console.log('Is dropdown button: ', isDropdownButton);
   if (!isDropdownButton && e.target.closest('#dropdown') != null) return;
 
   let curDropDown;
   if (isDropdownButton){
     curDropDown = e.target.closest('#dropdown');
     curDropDown.classList.toggle('active');
-    console.log('Current dropdown: ', curDropDown);
+    // console.log('Current dropdown: ', curDropDown);
   }
 
   document.querySelectorAll('#dropdown.active').forEach(dropdown => {
