@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="news.css" />
+    <script defer src="news.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!------------------------------------------------------------- HEADER START ------------------------------------------------------------->
+    <div id="header">
+      <div id="logo-container">
+        <button onclick="openIndex()">
+          <img
+            src="res/WordPress-logotype-wmark-white.png"
+            alt="WordPress-logotype-wmark"
+          />
+        </button>
+      </div>
+      <div id="nav">
+        <button
+          onclick="openNews()"
+          style="
+            text-decoration: underline;
+            color: #7b90ff;
+            border-bottom: 5px solid #7b90ff;
+            background-color: #1c2024;
+          "
+        >
+          News
+        </button>
+        <button onclick="openShowCase()">Showcase</button>
+        <button onclick="openHosting()">Hosting</button>
+        <div id="dropdown">
+          <button id="dropdown_btn">Extend <i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Blocks</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">Learn<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Learn WordPress</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Developers</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">Community<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Make WordPress</a></li>
+            <li><a href="#">Photo Directory</a></li>
+            <li><a href="#">Five for the Future</a></li>
+            <li><a href="#">Events</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">About<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">About WordPress</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </div>
+        </div>
+      </div>
+      <div id="right-btns">
+        <button id="search">
+          <div style="height: 25px; width: 25px">
+            <img
+              src="res/search.png"
+              alt="search-logo"
+              style="width: 100%; height: 100%; object-fit: fill"
+            />
+          </div>
+        </button>
+        <button id="getwordpress">Get WordPress</button>
+      </div>
+    </div>
+    <!------------------------------------------------------------- HEADER END ------------------------------------------------------------->
+    <div id="body-container">
+      <div id="news-content-1">
+        <div id="news-container">
+          <h1>News</h1>
+        </div>
+        <div id="release-container">
+          <h2>Latest Release</h2>
+          <a href="" style="color: white; text-decoration: underline"
+            >See All Releases</a
+          >
+        </div>
+        <div id="version-container">
+          <h1><a href="">6.5.3</a></h1>
+          <span>May 7, 2024</span>
+        </div>
+      </div>
+      <div id="news-content-2">
+        <div id="cont2-1">
+          <h1>Latest Posts</h1>
+        </div>
+        <div id="cont2-2">
+          <div>
+            <h1>WordPress 6.5.3 Maintenance Release</h1>
+            <span><a href="">RELEASES</a> • May 7, 2024</span>
+          </div>
+          <div>
+            <h1>
+              Episode 78: Guided Growth: Cultivating Contributors Through
+              Mentorship
+            </h1>
+            <span><a href="">PODCAST</a> • April 29, 2024</span>
+          </div>
+          <div>
+            <h1>How WordPress Is Creating a Faster Web</h1>
+            <span
+              ><a href="">GENERAL, PERFORMANCE, UPDATES</a> • April 15,
+              2024</span
+            >
+          </div>
+          <div>
+            <h1>Episode 77: Let’s Talk About Data Liberation</h1>
+            <span><a href="">PODCAST</a> • April 29, 2024</span>
+          </div>
+          <div>
+            <h1>WordPress 6.5.2 Maintenance and Security Release</h1>
+            <span><a href="">RELEASES</a> • April 9, 2024</span>
+          </div>
+        </div>
+      </div>
+      <div id="pow-container">
+        <h1>People of WordPress</h1>
+        <div id="people-photo-container">
+          <div id="photo-container">
+            <img src="res/sunita-rai.jpg" alt="sunita-rai" />
+            <a href="">People Of WordPress: Sunita Rai</a>
+          </div>
+          <div id="photo-container">
+            <img src="res/artemy-kaydash.jpg" alt="artemy-kaydash" />
+            <a href="">People Of WordPress: Artemy Kaydash</a>
+          </div>
+          <div id="photo-container">
+            <img src="res/Ihtisham-zahoor.jpg" alt="Ihtisham-zahoor" />
+            <a href="">People Of WordPress: Ihtisham Zahoor</a>
+          </div>
+          <div id="photo-container">
+            <img src="res/allison-dye.jpg" alt="allison-dye" />
+            <a href="">People Of WordPress: Allison Dye</a>
+          </div>
+          <div id="photo-container">
+            <img src="res/stefano-cassone.jpg" alt="stefano-cassone" />
+            <a href="">People Of WordPress: Stefano Cassone</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="ffsw-container">
+        <div id="ffsw-content-1">
+          <h1>Follow The Code</h1>
+          <p>
+            There's a development blog and you can track active development in
+            the Trac timeline that often has 20-30 updates per day.
+          </p>
+        </div>
+        <div id="ffsw-content-2">
+          <h1>Find An Even Near You</h1>
+          <p>
+            Check out the WordChamp schedule and find your local Meetup group!
+            For more WordPress news, check out the WordPress Planet.
+          </p>
+        </div>
+        <div id="ffsw-content-3">
+          <h1>Subscribe to WordPress News</h1>
+          <div id="input-container">
+            <input type="text" placeholder="Email Address" />
+            <button>Subscribe</button>
+          </div>
+          <p>Join 17.4K other subscirbers</p>
+        </div>
+        <div id="ffsw-content-4">
+          <h1>WP Briefing - The WordPress Podcast</h1>
+          <p>
+            Join Josepha Haden and Matt Mullenweg to learn about where Wordpress
+            is going and how you can get involved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------- BODY START ------------------------------------------------------------->
+
+    <!------------------------------------------------------------- BODY END ------------------------------------------------------------->
+
+    <!------------------------------------------------------------- FOOTER START ------------------------------------------------------------->
+    <div id="footer">
+      <div id="col1">
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Hosting</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div id="col2">
+        <a href="">Showcase</a>
+        <a href="">Themes</a>
+        <a href="">Plugins</a>
+        <a href="">Patterns</a>
+      </div>
+      <div id="col3">
+        <a href="">Learn</a>
+        <a href="">Documentation</a>
+        <a href="">Developers</a>
+        <a href="">WordPress.tv ↗</a>
+      </div>
+      <div id="col4">
+        <a href="">Get Involved</a>
+        <a href="">Events</a>
+        <a href="">Donate ↗</a>
+        <a href="">Swag Store ↗</a>
+      </div>
+    </div>
+    <div id="footer-2">
+      <div style="display: flex; align-items: center">
+        <div id="logo-container-2">
+          <a href="#"
+            ><img
+              src="res/WordPress-logotype-wmark-white.png"
+              alt="wordpress-logo"
+          /></a>
+        </div>
+        <a href="index.html" id="wordpressorg"
+          ><span style="font-weight: bold"
+            ><span style="font-size: 20px">W</span>ORD<span
+              style="font-size: 20px"
+              >P</span
+            >RESS</span
+          ><span>.ORG</span></a
+        >
+      </div>
+      <span style="font-family: 'Times New Roman', Times, serif"
+        >CODE IS POETRY</span
+      >
+      <div id="social-logo-container">
+        <div>
+          <a href="https://www.facebook.com/WordPress/"
+            ><img src="res/fb-icon.png" alt="fb-icon"
+          /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/WordPress"
+            ><img src="res/x-logo.png" alt="x-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/wordpress/"
+            ><img src="res/instagram-logo.png" alt="ig-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/company/wordpress"
+            ><img src="res/In-White-72.png" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/wordpress"
+            ><img src="res/yt-logov2.png" alt="" ;
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------- FOOTER END ------------------------------------------------------------->
+  </body>
+</html>

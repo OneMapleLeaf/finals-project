@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+
+#down-arrow {
+  pointer-events: none;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* #arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+} */
+
+/*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+#body-container {
+}
+
+#news-content-1 {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #3e58e1;
+}
+
+#news-content-1 div {
+  padding: 64px;
+}
+
+#news-content-1 #news-container {
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #213fd4;
+}
+#news-content-1 #news-container h1 {
+  color: white;
+  font-size: 10rem;
+  font-family: serif;
+  font-weight: normal;
+}
+#news-content-1 #release-container {
+  border-right: 1px solid #213fd4;
+  width: 30%;
+}
+
+#news-content-1 #version-container {
+  width: 70%;
+}
+
+#release-container h2 {
+  color: white;
+  font-size: 4rem;
+  font-family: serif;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+#version-container > h1 > a {
+  color: white;
+  font-size: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#version-container span {
+  color: white;
+}
+
+#version-container:hover {
+  cursor: pointer;
+  text-decoration: underline white;
+  background-color: #384fca;
+}
+
+#version-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#news-content-2 {
+  display: flex;
+  width: 100vw;
+  height: 115vh;
+}
+
+#news-content-2 #cont2-1 {
+  width: 30%;
+  padding: 64px 64px;
+  border-right: 1px solid #d9d9d9;
+}
+
+#news-content-2 #cont2-1 h1 {
+  color: black;
+  font-size: 3rem;
+  font-family: serif;
+  font-weight: normal;
+  width: 50%;
+}
+#news-content-2 #cont2-2 h1 {
+  font-weight: normal;
+  font-family: serif;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+#news-content-2 #cont2-2 h1:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+#news-content-2 #cont2-2 a {
+  color: blue;
+}
+
+#news-content-2 #cont2-2 {
+  padding: 48px 64px;
+  width: 70%;
+}
+#news-content-2 #cont2-2 > div {
+  padding: 24px 0;
+}
+
+#pow-container {
+  width: 100%;
+  height: 65vh;
+
+  background-color: #f8f3ec;
+}
+
+#pow-container * {
+  font-family: serif;
+  font-weight: normal;
+}
+
+#pow-container h1 {
+  padding: 70px 64px;
+  font-size: 3rem;
+}
+#people-photo-container{
+  display: flex;
+  margin-top: 48px;
+}
+#people-photo-container > div {
+  position: relative;
+  padding: 0 2px;
+  width: 20%;
+  height: 35vh;
+}
+#people-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+#people-photo-container > #photo-container:hover img{
+  cursor: pointer;
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(0.8);
+}
+#people-photo-container a{
+  opacity: 0;
+  padding: 12px 12px;
+  font-size: 1.9rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+#people-photo-container > #photo-container:hover a{
+  text-decoration: underline;
+  opacity: 1;
+}
+
+#ffsw-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+}
+
+#ffsw-container > div {
+  
+  border: 1px solid #d9d9d9;
+  padding: 64px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:start;
+  text-align: left;
+  width: 50%;
+}
+
+#ffsw-container > div > h1 {
+  font-weight: normal;
+  font-family: serif;
+  margin-bottom: 12px;
+}
+
+input[type="text"] {
+  /* background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px; */
+  padding: 10px 4px;
+  width: 70%;
+}
+#input-container {
+  width: 80%;
+  margin: 24px 0;
+}
+button{
+  width: 20%;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+}
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/
