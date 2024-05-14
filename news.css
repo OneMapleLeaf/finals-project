@@ -133,7 +133,6 @@ a {
   background-color: #213fd4;
 }
 
-
 #down-arrow {
   pointer-events: none;
   border: solid white;
@@ -157,9 +156,6 @@ a {
 /*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
-
-#body-container {
-}
 
 #news-content-1 {
   display: flex;
@@ -189,7 +185,6 @@ a {
   border-right: 1px solid #213fd4;
   width: 30%;
 }
-
 #news-content-1 #version-container {
   width: 70%;
 }
@@ -208,7 +203,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
-
 #version-container span {
   color: white;
 }
@@ -230,7 +224,6 @@ a {
   width: 100vw;
   height: 115vh;
 }
-
 #news-content-2 #cont2-1 {
   width: 30%;
   padding: 64px 64px;
@@ -284,7 +277,7 @@ a {
   padding: 70px 64px;
   font-size: 3rem;
 }
-#people-photo-container{
+#people-photo-container {
   display: flex;
   margin-top: 48px;
 }
@@ -301,11 +294,12 @@ a {
   filter: grayscale(100%);
   display: block;
 }
-#people-photo-container > #photo-container:hover img{
+
+#people-photo-container > #photo-container:hover img {
   cursor: pointer;
   filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(0.8);
 }
-#people-photo-container a{
+#people-photo-container a {
   opacity: 0;
   padding: 12px 12px;
   font-size: 1.9rem;
@@ -315,11 +309,10 @@ a {
   width: 100%;
   color: white;
 }
-#people-photo-container > #photo-container:hover a{
+#people-photo-container > #photo-container:hover a {
   text-decoration: underline;
   opacity: 1;
 }
-
 #ffsw-container {
   display: flex;
   flex-wrap: wrap;
@@ -327,13 +320,12 @@ a {
 }
 
 #ffsw-container > div {
-  
   border: 1px solid #d9d9d9;
   padding: 64px 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:start;
+  align-items: start;
   text-align: left;
   width: 50%;
 }
@@ -343,7 +335,6 @@ a {
   font-family: serif;
   margin-bottom: 12px;
 }
-
 input[type="text"] {
   /* background-color: #f9f9f9;
   border: none;
@@ -351,11 +342,12 @@ input[type="text"] {
   padding: 10px 4px;
   width: 70%;
 }
+
 #input-container {
   width: 80%;
   margin: 24px 0;
 }
-button{
+#input-container button {
   width: 20%;
   color: white;
   padding: 12px 12px;
