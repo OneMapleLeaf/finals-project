@@ -1,612 +1,749 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="res/WordPress-logotype-wmark-white.ico">
-    <link rel="stylesheet" href="MakeWordPress.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="res/WordPress-logotype-wmark-white.ico"
+    />
+    <link rel="stylesheet" href="MakeWordPress.css" />
     <script defer src="MakeWordPress.js"></script>
     <title>Get Involved — WordPress.org</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!------------------------------------------------------------- HEADER START ------------------------------------------------------------->
     <div id="header">
-        <div id="logo-container">
-            <button onclick="openIndex()">
-                <img src="res/WordPress-logotype-wmark-white.png" alt="WordPress-logotype-wmark" />
-            </button>
+      <div id="logo-container">
+        <button onclick="openIndex()">
+          <img
+            src="res/WordPress-logotype-wmark-white.png"
+            alt="WordPress-logotype-wmark"
+          />
+        </button>
+      </div>
+      <div id="nav">
+        <button onclick="openNews()">News</button>
+        <button onclick="openShowCase()">Showcase</button>
+        <button onclick="openHosting()">Hosting</button>
+        <div id="dropdown">
+          <button id="dropdown_btn">Extend<span id="arrow"></span></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Blocks</a></li>
+          </div>
         </div>
-        <div id="nav">
-            <button onclick="openNews()">News</button>
-            <button onclick="openShowCase()">Showcase</button>
-            <button onclick="openHosting()">Hosting</button>
-            <div id="dropdown">
-                <button id="dropdown_btn">Extend<span id="arrow"></span></button>
-                <div id="dropdown-menu">
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li><a href="#">Patterns</a></li>
-                    <li><a href="#">Blocks</a></li>
-                </div>
-            </div>
-            <div id="dropdown">
-                <button id="dropdown_btn">Learn<span id="arrow"></span></button>
-                <div id="dropdown-menu">
-                    <li><a href="#">Learn WordPress</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Developers</a></li>
-                </div>
-            </div>
-            <div id="dropdown">
-                <button id="dropdown_btn">Community<span id="arrow"></span></button>
-                <div id="dropdown-menu">
-					<li><a href="MakeWordPress.html" style="text-decoration: underline; color: blue;">Make WordPress</a></li>
-					<li><a href="PhotoDirectory.html">Photo Directory</a></li>
-					<li><a href="FiveForTheFuture.html">Five for the Future</a></li>
-                    <li><a href="#">Events</a></li>
-                </div>
-            </div>
-            <div id="dropdown">
-                <button id="dropdown_btn">About<span id="arrow"></span></button>
-                <div id="dropdown-menu">
-                    <li><a href="#">About WordPress</a></li>
-                    <li><a href="#">Enterprise</a></li>
-                </div>
-            </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">Learn<span id="arrow"></span></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Learn WordPress</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Developers</a></li>
+          </div>
         </div>
-        <div id="right-btns">
-            <button id="search">
-                <div style="height: 25px; width: 25px;"><img src="res/search.png" alt="search-logo"
-                        style="width: 100%; height: 100%; object-fit: fill;" /></div>
-            </button>
-            <button id="getwordpress">Get WordPress</button>
+        <div id="dropdown">
+          <button id="dropdown_btn">Community<span id="arrow"></span></button>
+          <div id="dropdown-menu">
+            <li>
+              <a
+                href="MakeWordPress.html"
+                style="text-decoration: underline; color: blue"
+                >Make WordPress</a
+              >
+            </li>
+            <li><a href="PhotoDirectory.html">Photo Directory</a></li>
+            <li><a href="FiveForTheFuture.html">Five for the Future</a></li>
+            <li><a href="#">Events</a></li>
+          </div>
         </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">About<span id="arrow"></span></button>
+          <div id="dropdown-menu">
+            <li><a href="#">About WordPress</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </div>
+        </div>
+      </div>
+      <div id="right-btns">
+        <button id="search">
+          <div style="height: 25px; width: 25px">
+            <img
+              src="res/search.png"
+              alt="search-logo"
+              style="width: 100%; height: 100%; object-fit: fill"
+            />
+          </div>
+        </button>
+        <button id="getwordpress">Get WordPress</button>
+      </div>
     </div>
     <!------------------------------------------------------------- HEADER END ------------------------------------------------------------->
     <!------------------------------------------------------------- HEADER END ------------------------------------------------------------->
     <!------------------------------------------------------------- BODY START ------------------------------------------------------------->
-	<div id="MakeWordPressBanner">
-		<p style="color:#333333;">Make WordPress</p>
-	</div>
-	<div id="content">
-		<div id="leftSide">
-		<div id="mainIntro">	
-			<p style="color:white;">Whether you’re a budding developer, a designer, 
-			or just like helping out, we’re always looking for people to 
-			help make WordPress even better. 
-			</p>
-		</div>
-		<div id="subIntro">
-			<p style="color:white;">If you want to get involved in WordPress, this is the place to be. We’ve got blogs for 
-			each contributor group, general news, and upcoming events. 
-			</p>
-		</div>
-		</div>
-		<div id="rightSide">
-			<div id="image">
-			  <img id="summit" src="res/paris-summit.jpg" alt="res/paris-summit.jpg" height="200" width="68%">
-			</div>
-		</div>
-	</div>
-	<div id="MakeWordPressNavBar">
-				<div>
-					Meetings
-				</div>
-				<div>
-					Team Updates
-				</div>
-				<div>
-					Project Updates
-				</div>
-				<div>
-					Five for the Future
-				</div>
-				<div>
-					Contributor Handbook
-				</div>
-	</div>
-	<div id="greybackground">
-			<p>There are many different ways for you to get involved with WordPress:</p>
-	</div>
-	
-	
-	<div id="vessel">
-			<div id="core">
-			<div id="coreTitle">Core</div>
-			<p id="coreInfo">The core team makes WordPress. Whether you’re a seasoned 
-			PHP, HTML, JavaScript or CSS developer or are just learning
-			to code, we’d love to have you on board. You can write code, 
-			fix bugs, debate decisions, and help with development.</p>
-			<div id="coreFirstDetails">
-			<p id="coreNextMeet">Next Meeting:</p>
-			<p id="officeHours"> JavaScript Weekly Office Hours</p>
-			<a href="#">(9+ more)</a>
-			</div>
-			<div id="coreSecondDetails">
-			<p id="coreTime">Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via</p>
-			<a href="#">#core-js</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="coreThirdDetails">
-			<p id="or">or</p>
-			<a href="#">or #core-js:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="design">
-			<div id ="designTitle">Design</div>
-			<p id="designInfo">The design group is focused on the designing and developing
-			the user interface. It’s a home for designers and UXers alike. 
-			There are regular discussions about mockups, design, and user testing.</p>
-			<div id="designFirstDetails">
-			<p id="designNextMeet">Next Meeting:</p>
-			<p id="officeHours"> JavaScript Weekly Office Hours</p>
-			</div>
-			<div id="designSecondDetails">
-			<p id="designTime">Wednesday, 11:00 PM GMT+8 (1 week from now) accessible via</p>
-			<a href="#">#design</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="designThirdDetails">
-			<p id="or">or</p>
-			<a href="#"> #design:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="mobile">
-			<p id="mobileTitle">Mobile</p>
-			<p id="mobileInfo">The mobile team builds the iOS and Android apps. Lend them 
-			your Kotlin, Swift, or React Native skills. The team also needs 
-			designers, UX experts, and testers to give users a smooth 
-			experience on every device.</p>
-			</div>
-			
-			<div id="accessibility">
-			<p id="accessibilityTitle">Accessibility</p>
-			<p id="accessibilityInfo">The a11y group provides accessibility expertise across the 
-			project. They make sure that WordPress core and all of 
-			WordPress’ resources are accessible.</p>
-			<div id="accessibilityFirstDetails">
-			<p id="accessibilityNextMeet">Next Meeting:</p>
-			<p id="officeHours">Accessibility Weekly Bug Scrub</p>
-			<a href="#">(1+ more)</a>
-			</div>
-			<div id="accessibilitySecondDetails">
-			<p id="accessibilityTime">Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via</p>
-			<a href="#">#accessibility</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="accessibilityThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#accessibility:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="polyglots">
-			<p id="polyglotsTitle">Polyglots</p>
-			<p id="polyglotsInfo">WordPress is used all over the world and in many different 
-			languages. If you’re a polyglot, help out by translating 
-			WordPress into your own language. You can also assist with 
-			creating the tools that make translations easier.</p>
-			<div id="polyglotsFirstDetails">
-			<p id="polyglotsNextMeet">Next Meeting:</p>
-			<p id="officeHours">Polyglots Team Chat (Asia-Pacific) </p>
-			<a href="#">(2+ more)</a>
-			</div>
-			<div id="polyglotsSecondDetails">
-			<p id="polyglotsTime">Wednesday, 03:00 PM GMT+8 (3 days from now) accessible via</p>
-			<a href="#">#polyglots </a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="polyglotsThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#polyglots:community.wordpress.org</a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="support">
-			<p id="supportTitle">Support</p>
-			<p id="supportInfo">Answering a question in the support forums or IRC is one of
-			the easiest ways to start contributing. Everyone knows the 
-			answer to something! This blog is the place for discussion of 
-			issues around support.</p>
-			<div id="supportFirstDetails">
-			<p id="supportNextMeet">Next Meeting:</p>
-			<p id="officeHours">Support Team Weekly Chat </p>
-			<a href="#">(1+ more)</a>
-			</div>
-			<div id="supportSecondDetails">
-			<p id="supportTime">Friday, 04:00 AM GMT+8 (2 weeks from now) accessible via</p>
-			<a href="#">#forums </a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="supportThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#forums:community.wordpress.org</a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="documentation">
-			<p id="documentationTitle">Documentation</p>
-			<p id="documentationInfo">Good documentation lets people help themselves when they 
-			get stuck. The docs team is responsible for creating
-			documentation and is always on the look-out for writers. The 
-			blog has discussion around the team’s current projects</p>
-			<div id="documentationFirstDetails">
-			<p id="documentationNextMeet">Next Meeting:</p>
-			<p id="officeHours">Documentation team issues triage </p>
-			<a href="#">(2+ more)</a>
-			</div>
-			<div id="documentationSecondDetails">
-			<p id="documentationTime">Tuesday, 10:00 PM GMT+8 (2 days from now) accessible via</p>
-			<a href="#">#docs </a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="documentationThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#docs:community.wordpress.org</a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="themes">
-			<p id="themesTitle">Themes</p>
-			<p id="themesInfo">The Theme Review Team reviews and approves every Theme 
-			submitted to the WordPress Theme repository. Reviewing 
-			Themes sharpens your own Theme development skills. You 
-			can help out and join the discussion on the blog.
-</p>
-			<div id="themesFirstDetails">
-			<p id="themesNextMeet">Next Meeting:</p>
-			<p id="officeHours">Themes Team Biweekly Chat</p>
-			<a href="#">(1+ more)</a>
-			</div>
-			<div id="themesSecondDetails">
-			<p id="themesTime">Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via</p>
-			<a href="#">#themereview</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="themesThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#themereview:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="plugIn">
-			<p id="plugInTitle">Plugins</p>
-			<p id="plugInInfo">The mobile team builds the iOS and Android apps. Lend them 
-			your Kotlin, Swift, or React Native skills. The team also needs 
-			designers, UX experts, and testers to give users a smooth 
-			experience on every device.</p>
-			</div>
-			
-			<div id="community">
-			<p id="communityTitle">Community</p>
-			<p id="communityInfo">If you’re interested in organizing a meetup or a WordCamp, the 
-			community blog is a great place to get started. There are 
-			groups working to support events, to create outreach and training programs, and 
-			generally support the community.</p>
-			<div id="communityFirstDetails">
-			<p id="communityNextMeet">Next Meeting:</p>
-			<p id="officeHours">Mentorship Chat: Contributor Working Group (Asia-Pacific / EMEA) </p>
-			<a href="#">(3+ more)</a>
-			</div>
-			<div id="communitySecondDetails">
-			<p id="communityTime">Thursday, 03:00 PM GMT+8 (4 days from now) accessible via</p>
-			<a href="#">#community</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="communityThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#community-team:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="meta">
-			<p id="metaTitle">Meta</p>
-			<p id="metaInfo">The Meta team makes WordPress.org, provides support, and 
-			builds tools for use by all the contributor groups. If you want to 
-			help make WordPress.org better, sign up for updates from the Meta blog.</p>
-			<div id="metaFirstDetails">
-			<p id="metaNextMeet">Next Meeting:</p>
-			<p id="officeHours">Meta Team Biweekly Chat</p>
-			</div>
-			<div id="metaSecondDetails">
-			<p id="metaTime">Thursday, 03:00 AM GMT+8 (3 days from now) accessible via </p>
-			<a href="#">#meta </a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="metaThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#meta:community.wordpress.org</a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="training">
-			<p id="trainingTitle">Training</p>
-			<p id="trainingInfo">The WordPress training team helps people learn to use, 
-			extend, and contribute to WordPress through synchronous and
-			asynchronous learning as well as downloadable lesson plans 
-			for instructors to use in live environments, via 
-			learn.wordpress.org. If you enjoy teaching people how to use 
-			and build stuff for WordPress, immediately stop what you’re doing and join our team!</p>
-			<div id="trainingFirstDetails">
-			<p id="trainingNextMeet">Next Meeting:</p>
-			<p id="officeHours">Training Team weekly meetings (2024) </p>
-			<a href="#">(1+ more)</a>
-			</div>
-			<div id="trainingSecondDetails">
-			<p id="trainingTime">Thursday, 08:00 AM GMT+8 (3 days from now) accessible via</p>
-			<a href="#">#training</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="trainingThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#training:community.wordpress.org  </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="test">
-			<p id="testTitle">Test</p>
-			<p id="testInfo">The Test Team works to improve WordPress quality and usability by advancing
-			the development process through manual and automated testing. Whether through a browser, app, 
-			terminal, or code, the team focuses on testing across the entire WordPress ecosystem, including 
-			Core and Gutenberg, mobile apps and themes, and feature plugins and importers.</p>
-			<div id="testFirstDetails">
-			<p id="testNextMeet">Next Meeting:</p>
-			<p id="officeHours">Test Team Triage</p>
-			<a href="#">(1+ more) </a>
-			</div>
-			<div id="testSecondDetails">
-			<p id="testTime">Tuesday, 07:00 PM GMT+8 (1 day from now) accessible via</p>
-			<a href="#">#core-test</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="testThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#core-test:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="tv">
-			<p id="tvTitle">TV</p>
-			<p id="tvInfo">The TV team reviews and approves every video submitted to WordPress.tv.
-			They also help WordCamps with video post-production and are responsible 
-			for the captioning and subtitling of published videos. Reviewing videos is
-			a great way to learn about WordPress and help the community: experience
-			is not required to get involved.</p>
-			<div id="tvFirstDetails">
-			<p id="tvNextMeet">Next Meeting:</p>
-			<p id="officeHours">WordPress.tv Team Weekly Chat</p>
-			</div>
-			<div id="tvSecondDetails">
-			<p id="tvTime">Thursday, 11:00 PM GMT+8 (4 days from now) accessible via </p>
-			<a href="#">#wptv</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="tvThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#wptv:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="marketing">
-			<p id="marketingTitle">Marketing</p>
-			<p id="marketingInInfo">The Marketing team is currently archived to make room for 
-			an experimental shift in focus and processes. Check out the WordPress Media Corps to learn more. 
-			Amplification requests and Showcase activities are still running, and you 
-			can find out more about them on GitHub.</p>
-			</div>
-			
-			<div id="CLI">
-			<p id="CLITitle">CLI</p>
-			<p id="CLIInfo">WP-CLI is the official command line tool for interacting with and managing your WordPress sites.</p>
-			<div id="CLIFirstDetails">
-			<p id="CLINextMeet">Next Meeting:</p>
-			<p id="officeHours">WP-CLI Weekly Chat</p>
-			</div>
-			<div id="CLISecondDetails">
-			<p id="CLITime">Thursday, 11:00 PM GMT+8 (4 days from now) accessible via </p>
-			<a href="#">#cli</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="CLIThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#cli:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="hosting">
-			<p id="hostingTitle">Hosting</p>
-			<p id="hostingInfo">We work to improve WordPress’ end-user experience across hosting environments 
-			through industry collaboration and user education. Come join us!</p>
-			<div id="hostingFirstDetails">
-			<p id="hostingNextMeet">Next Meeting:</p>
-			<p id="officeHours">Hosting Team Meeting (APAC/EMEA)</p>
-			<a href="#">(1+ more) </a>
-			</div>
-			<div id="hostingSecondDetails">
-			<p id="hostingTime">Wednesday, 05:00 PM GMT+8 (2 days from now)</p>
-			</div>
-			</div>
-			
-			<div id="tide">
-			<p id="tideTitle">Tide</p>
-			<p id="tideInfo">Tide is a series of automated tests run against every plugin and theme in the directory 
-			and then displays PHP compatibility and test errors/warnings in the directory</p>
-			<div id="tideFirstDetails">
-			<p id="tideNextMeet">Next Meeting:</p>
-			<p id="officeHours">Tide Weekly Chat</p>
-			</div>
-			<div id="tideSecondDetails">
-			<p id="tideTime">Wednesday, 02:00 AM GMT+8 (1 week from now) accessible via</p>
-			<a href="#">#tide</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="tideThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#tide:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="openVerse">
-			<p id="openVerseTitle">Openverse</p>
-			<p id="openVerseInfo">Openverse is a search engine for openly-licensed media.
-			The Openverse team implements new features and new media types; maintains
-			the public API and front-end search engine; and develops WordPress 
-			integrations to share Openverse with the entire WordPress community.</p>
-			<div id="openVerseFirstDetails">
-			<p id="openVerseNextMeet">Next Meeting:</p>
-			<p id="officeHours">Openverse Development Weekly Chat</p>
-			</div>
-			<div id="openVerseSecondDetails">
-			<p id="openVerseTime">Monday, 11:00 PM GMT+8 (13 hours from now) accessible via</p>
-			<a href="#">#openverse</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="openVerseThirdDetails">
-			<p id="or">or</p>
-			<a href="#"> #openverse:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="photos">
-			<p id="photosTitle">Photos</p>
-			<p id="photosInfo">The Photo Directory team moderates every photo submitted to the WordPress Photo Directory,
-			maintains and improves the directory site itself, and provides resources and 
-			documentation to educate, encourage, and facilitate photo contributors.</p>
-			<div id="photosFirstDetails">
-			<p id="photosNextMeet">Next Meeting:</p>
-			<p id="officeHours">Photo Directory Team Meeting</p>
-			</div>
-			<div id="photosSecondDetails">
-			<p id="photosTime">Friday, 10:00 PM GMT+8 (4 weeks from now) accessible via</p>
-			<a href="#">#photos</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="photosThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#photos:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="corePerf">
-			<p id="corePerfTitle">Core Performance</p>
-			<p id="corePerfInfo">The core performance team is dedicated to monitoring, enhancing, and promoting
-			performance in WordPress core and its surrounding ecosystem..</p>
-			<div id="corePerfFirstDetails">
-			<p id="corePerfNextMeet">Next Meeting:</p>
-			<p id="officeHours">Performance Weekly Chat</p>
-			<a href="#">(2+ more) </a>
-			</div>
-			<div id="corePerfSecondDetails">
-			<p id="corePerfTime">Wednesday, 12:00 AM GMT+8 (2 days from now) accessible via</p>
-			<a href="#">#core-performance</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="corePerfThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#core-performance:community.wordpress.org </a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="sustainability">
-			<p id="sustainabilityTitle">Sustainability</p>
-			<p id="sustainabilityInfo">The main objective is to embed sustainable practices
-			into the WordPress community and its processes. We focus on ensuring longevity; 
-			socially, economically, and environmentally.</p>
-			<div id="sustainabilityFirstDetails">
-			<p id="sustainabilityNextMeet">Next Meeting:</p>
-			<p id="officeHours">Sustainability Team Meeting</p>
-			</div>
-			<div id="sustainabilitySecondDetails">
-			<p id="sustainabilityTime">Friday, 07:00 PM GMT+8 (2 weeks from now) accessible via </p>
-			<a href="#">#sustainability</a>
-			<p id="onSlack">on Slack</p>
-			</div>
-			<div id="sustainabilityThirdDetails">
-			<p id="or">or</p>
-			<a href="#">#sustainability:community.wordpress.org</a>
-			<p id="onMatrix">on Matrix</p>
-			</div>
-			</div>
-			
-			<div id="mediaCorps">
-			<p id="mediaCorpsTitle">Media Corps</p>
-			<p id="mediaCorpsInfo">We work to improve WordPress’ end-user experience across hosting environments 
-			through industry collaboration and user education. Come join us!</p>
-			</div>
-			
-	</div>
-	
+    <div id="MakeWordPressBanner">
+      <p style="color: #333333">Make WordPress</p>
+    </div>
+    <div id="content">
+      <div id="leftSide">
+        <div id="mainIntro">
+          <p style="color: white">
+            Whether you’re a budding developer, a designer, or just like helping
+            out, we’re always looking for people to help make WordPress even
+            better.
+          </p>
+        </div>
+        <div id="subIntro">
+          <p style="color: white">
+            If you want to get involved in WordPress, this is the place to be.
+            We’ve got blogs for each contributor group, general news, and
+            upcoming events.
+          </p>
+        </div>
+      </div>
+      <div id="rightSide">
+        <div id="image">
+          <img
+            id="summit"
+            src="res/paris-summit.jpg"
+            alt="res/paris-summit.jpg"
+            height="200"
+            width="68%"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="MakeWordPressNavBar">
+      <div>Meetings</div>
+      <div>Team Updates</div>
+      <div>Project Updates</div>
+      <div>Five for the Future</div>
+      <div>Contributor Handbook</div>
+    </div>
+    <div id="greybackground">
+      <p>
+        There are many different ways for you to get involved with WordPress:
+      </p>
+    </div>
+
+    <div id="vessel">
+      <div id="core">
+        <div id="coreTitle">Core</div>
+        <p id="coreInfo">
+          The core team makes WordPress. Whether you’re a seasoned PHP, HTML,
+          JavaScript or CSS developer or are just learning to code, we’d love to
+          have you on board. You can write code, fix bugs, debate decisions, and
+          help with development.
+        </p>
+        <div id="coreFirstDetails">
+          <p id="coreNextMeet">Next Meeting:</p>
+          <p id="officeHours">JavaScript Weekly Office Hours</p>
+          <a href="#">(9+ more)</a>
+        </div>
+        <div id="coreSecondDetails">
+          <p id="coreTime">
+            Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via
+          </p>
+          <a href="#">#core-js</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="coreThirdDetails">
+          <p id="or">or</p>
+          <a href="#">or #core-js:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="design">
+        <div id="designTitle">Design</div>
+        <p id="designInfo">
+          The design group is focused on the designing and developing the user
+          interface. It’s a home for designers and UXers alike. There are
+          regular discussions about mockups, design, and user testing.
+        </p>
+        <div id="designFirstDetails">
+          <p id="designNextMeet">Next Meeting:</p>
+          <p id="officeHours">JavaScript Weekly Office Hours</p>
+        </div>
+        <div id="designSecondDetails">
+          <p id="designTime">
+            Wednesday, 11:00 PM GMT+8 (1 week from now) accessible via
+          </p>
+          <a href="#">#design</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="designThirdDetails">
+          <p id="or">or</p>
+          <a href="#"> #design:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="mobile">
+        <p id="mobileTitle">Mobile</p>
+        <p id="mobileInfo">
+          The mobile team builds the iOS and Android apps. Lend them your
+          Kotlin, Swift, or React Native skills. The team also needs designers,
+          UX experts, and testers to give users a smooth experience on every
+          device.
+        </p>
+      </div>
+
+      <div id="accessibility">
+        <p id="accessibilityTitle">Accessibility</p>
+        <p id="accessibilityInfo">
+          The a11y group provides accessibility expertise across the project.
+          They make sure that WordPress core and all of WordPress’ resources are
+          accessible.
+        </p>
+        <div id="accessibilityFirstDetails">
+          <p id="accessibilityNextMeet">Next Meeting:</p>
+          <p id="officeHours">Accessibility Weekly Bug Scrub</p>
+          <a href="#">(1+ more)</a>
+        </div>
+        <div id="accessibilitySecondDetails">
+          <p id="accessibilityTime">
+            Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via
+          </p>
+          <a href="#">#accessibility</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="accessibilityThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#accessibility:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="polyglots">
+        <p id="polyglotsTitle">Polyglots</p>
+        <p id="polyglotsInfo">
+          WordPress is used all over the world and in many different languages.
+          If you’re a polyglot, help out by translating WordPress into your own
+          language. You can also assist with creating the tools that make
+          translations easier.
+        </p>
+        <div id="polyglotsFirstDetails">
+          <p id="polyglotsNextMeet">Next Meeting:</p>
+          <p id="officeHours">Polyglots Team Chat (Asia-Pacific)</p>
+          <a href="#">(2+ more)</a>
+        </div>
+        <div id="polyglotsSecondDetails">
+          <p id="polyglotsTime">
+            Wednesday, 03:00 PM GMT+8 (3 days from now) accessible via
+          </p>
+          <a href="#">#polyglots </a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="polyglotsThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#polyglots:community.wordpress.org</a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="support">
+        <p id="supportTitle">Support</p>
+        <p id="supportInfo">
+          Answering a question in the support forums or IRC is one of the
+          easiest ways to start contributing. Everyone knows the answer to
+          something! This blog is the place for discussion of issues around
+          support.
+        </p>
+        <div id="supportFirstDetails">
+          <p id="supportNextMeet">Next Meeting:</p>
+          <p id="officeHours">Support Team Weekly Chat</p>
+          <a href="#">(1+ more)</a>
+        </div>
+        <div id="supportSecondDetails">
+          <p id="supportTime">
+            Friday, 04:00 AM GMT+8 (2 weeks from now) accessible via
+          </p>
+          <a href="#">#forums </a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="supportThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#forums:community.wordpress.org</a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="documentation">
+        <p id="documentationTitle">Documentation</p>
+        <p id="documentationInfo">
+          Good documentation lets people help themselves when they get stuck.
+          The docs team is responsible for creating documentation and is always
+          on the look-out for writers. The blog has discussion around the team’s
+          current projects
+        </p>
+        <div id="documentationFirstDetails">
+          <p id="documentationNextMeet">Next Meeting:</p>
+          <p id="officeHours">Documentation team issues triage</p>
+          <a href="#">(2+ more)</a>
+        </div>
+        <div id="documentationSecondDetails">
+          <p id="documentationTime">
+            Tuesday, 10:00 PM GMT+8 (2 days from now) accessible via
+          </p>
+          <a href="#">#docs </a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="documentationThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#docs:community.wordpress.org</a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="themes">
+        <p id="themesTitle">Themes</p>
+        <p id="themesInfo">
+          The Theme Review Team reviews and approves every Theme submitted to
+          the WordPress Theme repository. Reviewing Themes sharpens your own
+          Theme development skills. You can help out and join the discussion on
+          the blog.
+        </p>
+        <div id="themesFirstDetails">
+          <p id="themesNextMeet">Next Meeting:</p>
+          <p id="officeHours">Themes Team Biweekly Chat</p>
+          <a href="#">(1+ more)</a>
+        </div>
+        <div id="themesSecondDetails">
+          <p id="themesTime">
+            Tuesday, 11:00 PM GMT+8 (2 days from now) accessible via
+          </p>
+          <a href="#">#themereview</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="themesThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#themereview:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="plugIn">
+        <p id="plugInTitle">Plugins</p>
+        <p id="plugInInfo">
+          The mobile team builds the iOS and Android apps. Lend them your
+          Kotlin, Swift, or React Native skills. The team also needs designers,
+          UX experts, and testers to give users a smooth experience on every
+          device.
+        </p>
+      </div>
+
+      <div id="community">
+        <p id="communityTitle">Community</p>
+        <p id="communityInfo">
+          If you’re interested in organizing a meetup or a WordCamp, the
+          community blog is a great place to get started. There are groups
+          working to support events, to create outreach and training programs,
+          and generally support the community.
+        </p>
+        <div id="communityFirstDetails">
+          <p id="communityNextMeet">Next Meeting:</p>
+          <p id="officeHours">
+            Mentorship Chat: Contributor Working Group (Asia-Pacific / EMEA)
+          </p>
+          <a href="#">(3+ more)</a>
+        </div>
+        <div id="communitySecondDetails">
+          <p id="communityTime">
+            Thursday, 03:00 PM GMT+8 (4 days from now) accessible via
+          </p>
+          <a href="#">#community</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="communityThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#community-team:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="meta">
+        <p id="metaTitle">Meta</p>
+        <p id="metaInfo">
+          The Meta team makes WordPress.org, provides support, and builds tools
+          for use by all the contributor groups. If you want to help make
+          WordPress.org better, sign up for updates from the Meta blog.
+        </p>
+        <div id="metaFirstDetails">
+          <p id="metaNextMeet">Next Meeting:</p>
+          <p id="officeHours">Meta Team Biweekly Chat</p>
+        </div>
+        <div id="metaSecondDetails">
+          <p id="metaTime">
+            Thursday, 03:00 AM GMT+8 (3 days from now) accessible via
+          </p>
+          <a href="#">#meta </a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="metaThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#meta:community.wordpress.org</a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="training">
+        <p id="trainingTitle">Training</p>
+        <p id="trainingInfo">
+          The WordPress training team helps people learn to use, extend, and
+          contribute to WordPress through synchronous and asynchronous learning
+          as well as downloadable lesson plans for instructors to use in live
+          environments, via learn.wordpress.org. If you enjoy teaching people
+          how to use and build stuff for WordPress, immediately stop what you’re
+          doing and join our team!
+        </p>
+        <div id="trainingFirstDetails">
+          <p id="trainingNextMeet">Next Meeting:</p>
+          <p id="officeHours">Training Team weekly meetings (2024)</p>
+          <a href="#">(1+ more)</a>
+        </div>
+        <div id="trainingSecondDetails">
+          <p id="trainingTime">
+            Thursday, 08:00 AM GMT+8 (3 days from now) accessible via
+          </p>
+          <a href="#">#training</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="trainingThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#training:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="test">
+        <p id="testTitle">Test</p>
+        <p id="testInfo">
+          The Test Team works to improve WordPress quality and usability by
+          advancing the development process through manual and automated
+          testing. Whether through a browser, app, terminal, or code, the team
+          focuses on testing across the entire WordPress ecosystem, including
+          Core and Gutenberg, mobile apps and themes, and feature plugins and
+          importers.
+        </p>
+        <div id="testFirstDetails">
+          <p id="testNextMeet">Next Meeting:</p>
+          <p id="officeHours">Test Team Triage</p>
+          <a href="#">(1+ more) </a>
+        </div>
+        <div id="testSecondDetails">
+          <p id="testTime">
+            Tuesday, 07:00 PM GMT+8 (1 day from now) accessible via
+          </p>
+          <a href="#">#core-test</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="testThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#core-test:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="tv">
+        <p id="tvTitle">TV</p>
+        <p id="tvInfo">
+          The TV team reviews and approves every video submitted to
+          WordPress.tv. They also help WordCamps with video post-production and
+          are responsible for the captioning and subtitling of published videos.
+          Reviewing videos is a great way to learn about WordPress and help the
+          community: experience is not required to get involved.
+        </p>
+        <div id="tvFirstDetails">
+          <p id="tvNextMeet">Next Meeting:</p>
+          <p id="officeHours">WordPress.tv Team Weekly Chat</p>
+        </div>
+        <div id="tvSecondDetails">
+          <p id="tvTime">
+            Thursday, 11:00 PM GMT+8 (4 days from now) accessible via
+          </p>
+          <a href="#">#wptv</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="tvThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#wptv:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="marketing">
+        <p id="marketingTitle">Marketing</p>
+        <p id="marketingInInfo">
+          The Marketing team is currently archived to make room for an
+          experimental shift in focus and processes. Check out the WordPress
+          Media Corps to learn more. Amplification requests and Showcase
+          activities are still running, and you can find out more about them on
+          GitHub.
+        </p>
+      </div>
+
+      <div id="CLI">
+        <p id="CLITitle">CLI</p>
+        <p id="CLIInfo">
+          WP-CLI is the official command line tool for interacting with and
+          managing your WordPress sites.
+        </p>
+        <div id="CLIFirstDetails">
+          <p id="CLINextMeet">Next Meeting:</p>
+          <p id="officeHours">WP-CLI Weekly Chat</p>
+        </div>
+        <div id="CLISecondDetails">
+          <p id="CLITime">
+            Thursday, 11:00 PM GMT+8 (4 days from now) accessible via
+          </p>
+          <a href="#">#cli</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="CLIThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#cli:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="hosting">
+        <p id="hostingTitle">Hosting</p>
+        <p id="hostingInfo">
+          We work to improve WordPress’ end-user experience across hosting
+          environments through industry collaboration and user education. Come
+          join us!
+        </p>
+        <div id="hostingFirstDetails">
+          <p id="hostingNextMeet">Next Meeting:</p>
+          <p id="officeHours">Hosting Team Meeting (APAC/EMEA)</p>
+          <a href="#">(1+ more) </a>
+        </div>
+        <div id="hostingSecondDetails">
+          <p id="hostingTime">Wednesday, 05:00 PM GMT+8 (2 days from now)</p>
+        </div>
+      </div>
+
+      <div id="tide">
+        <p id="tideTitle">Tide</p>
+        <p id="tideInfo">
+          Tide is a series of automated tests run against every plugin and theme
+          in the directory and then displays PHP compatibility and test
+          errors/warnings in the directory
+        </p>
+        <div id="tideFirstDetails">
+          <p id="tideNextMeet">Next Meeting:</p>
+          <p id="officeHours">Tide Weekly Chat</p>
+        </div>
+        <div id="tideSecondDetails">
+          <p id="tideTime">
+            Wednesday, 02:00 AM GMT+8 (1 week from now) accessible via
+          </p>
+          <a href="#">#tide</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="tideThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#tide:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="openVerse">
+        <p id="openVerseTitle">Openverse</p>
+        <p id="openVerseInfo">
+          Openverse is a search engine for openly-licensed media. The Openverse
+          team implements new features and new media types; maintains the public
+          API and front-end search engine; and develops WordPress integrations
+          to share Openverse with the entire WordPress community.
+        </p>
+        <div id="openVerseFirstDetails">
+          <p id="openVerseNextMeet">Next Meeting:</p>
+          <p id="officeHours">Openverse Development Weekly Chat</p>
+        </div>
+        <div id="openVerseSecondDetails">
+          <p id="openVerseTime">
+            Monday, 11:00 PM GMT+8 (13 hours from now) accessible via
+          </p>
+          <a href="#">#openverse</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="openVerseThirdDetails">
+          <p id="or">or</p>
+          <a href="#"> #openverse:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="photos">
+        <p id="photosTitle">Photos</p>
+        <p id="photosInfo">
+          The Photo Directory team moderates every photo submitted to the
+          WordPress Photo Directory, maintains and improves the directory site
+          itself, and provides resources and documentation to educate,
+          encourage, and facilitate photo contributors.
+        </p>
+        <div id="photosFirstDetails">
+          <p id="photosNextMeet">Next Meeting:</p>
+          <p id="officeHours">Photo Directory Team Meeting</p>
+        </div>
+        <div id="photosSecondDetails">
+          <p id="photosTime">
+            Friday, 10:00 PM GMT+8 (4 weeks from now) accessible via
+          </p>
+          <a href="#">#photos</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="photosThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#photos:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="corePerf">
+        <p id="corePerfTitle">Core Performance</p>
+        <p id="corePerfInfo">
+          The core performance team is dedicated to monitoring, enhancing, and
+          promoting performance in WordPress core and its surrounding
+          ecosystem..
+        </p>
+        <div id="corePerfFirstDetails">
+          <p id="corePerfNextMeet">Next Meeting:</p>
+          <p id="officeHours">Performance Weekly Chat</p>
+          <a href="#">(2+ more) </a>
+        </div>
+        <div id="corePerfSecondDetails">
+          <p id="corePerfTime">
+            Wednesday, 12:00 AM GMT+8 (2 days from now) accessible via
+          </p>
+          <a href="#">#core-performance</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="corePerfThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#core-performance:community.wordpress.org </a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="sustainability">
+        <p id="sustainabilityTitle">Sustainability</p>
+        <p id="sustainabilityInfo">
+          The main objective is to embed sustainable practices into the
+          WordPress community and its processes. We focus on ensuring longevity;
+          socially, economically, and environmentally.
+        </p>
+        <div id="sustainabilityFirstDetails">
+          <p id="sustainabilityNextMeet">Next Meeting:</p>
+          <p id="officeHours">Sustainability Team Meeting</p>
+        </div>
+        <div id="sustainabilitySecondDetails">
+          <p id="sustainabilityTime">
+            Friday, 07:00 PM GMT+8 (2 weeks from now) accessible via
+          </p>
+          <a href="#">#sustainability</a>
+          <p id="onSlack">on Slack</p>
+        </div>
+        <div id="sustainabilityThirdDetails">
+          <p id="or">or</p>
+          <a href="#">#sustainability:community.wordpress.org</a>
+          <p id="onMatrix">on Matrix</p>
+        </div>
+      </div>
+
+      <div id="mediaCorps">
+        <p id="mediaCorpsTitle">Media Corps</p>
+        <p id="mediaCorpsInfo">
+          We work to improve WordPress’ end-user experience across hosting
+          environments through industry collaboration and user education. Come
+          join us!
+        </p>
+      </div>
+    </div>
+
     <!------------------------------------------------------------- BODY END ------------------------------------------------------------->
 
     <!------------------------------------------------------------- FOOTER START ------------------------------------------------------------->
     <div id="footer">
-        <div id="col1">
-            <a href="#">About</a>
-            <a href="#">News</a>
-            <a href="#">Hosting</a>
-            <a href="#">Privacy</a>
-        </div>
-        <div id="col2">
-            <a href="">Showcase</a>
-            <a href="">Themes</a>
-            <a href="">Plugins</a>
-            <a href="">Patterns</a>
-        </div>
-        <div id="col3">
-            <a href="">Learn</a>
-            <a href="">Documentation</a>
-            <a href="">Developers</a>
-            <a href="">WordPress.tv ↗</a>
-        </div>
-        <div id="col4">
-            <a href="">Get Involved</a>
-            <a href="">Events</a>
-            <a href="">Donate ↗</a>
-            <a href="">Swag Store ↗</a>
-        </div>
+      <div id="col1">
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Hosting</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div id="col2">
+        <a href="">Showcase</a>
+        <a href="">Themes</a>
+        <a href="">Plugins</a>
+        <a href="">Patterns</a>
+      </div>
+      <div id="col3">
+        <a href="">Learn</a>
+        <a href="">Documentation</a>
+        <a href="">Developers</a>
+        <a href="">WordPress.tv ↗</a>
+      </div>
+      <div id="col4">
+        <a href="">Get Involved</a>
+        <a href="">Events</a>
+        <a href="">Donate ↗</a>
+        <a href="">Swag Store ↗</a>
+      </div>
     </div>
     <div id="footer-2">
-        <div style="display: flex; align-items: center">
-            <div id="logo-container-2">
-                <a href="#"><img src="res/WordPress-logotype-wmark-white.png" alt="wordpress-logo" /></a>
-            </div>
-            <a href="" id="wordpressorg"><span style="font-weight: bold"><span style="font-size: 20px">W</span>ORD<span
-                        style="font-size: 20px">P</span>RESS</span><span>.ORG</span></a>
+      <div style="display: flex; align-items: center">
+        <div id="logo-container-2">
+          <a href="#"
+            ><img
+              src="res/WordPress-logotype-wmark-white.png"
+              alt="wordpress-logo"
+          /></a>
         </div>
-        <span style="font-family: 'Times New Roman', Times, serif">CODE IS POETRY</span>
-        <div id="social-logo-container">
-            <div><a href="https://www.facebook.com/WordPress/"><img src="res/fb-icon.png" alt="fb-icon" /></a></div>
-            <div><a href="https://twitter.com/WordPress"><img src="res/x-logo.png" alt="x-logo" /></a></div>
-            <div><a href=""><a href="https://www.instagram.com/wordpress/"><img src="res/instagram-logo.png"
-                            alt="ig-logo" /></a></div>
-            <div><a href="https://www.linkedin.com/company/wordpress"><img src="res/In-White-72.png" alt="" /></a></div>
-            <div><a href="https://www.youtube.com/wordpress"><img src="res/yt-logov2.png" alt="" ; /></a></div>
+        <a href="index.html" id="wordpressorg"
+          ><span style="font-weight: bold"
+            ><span style="font-size: 20px">W</span>ORD<span
+              style="font-size: 20px"
+              >P</span
+            >RESS</span
+          ><span>.ORG</span></a
+        >
+      </div>
+      <span style="font-family: 'Times New Roman', Times, serif"
+        >CODE IS POETRY</span
+      >
+      <div id="social-logo-container">
+        <div>
+          <a href="https://www.facebook.com/WordPress/"
+            ><img src="res/fb-icon.png" alt="fb-icon"
+          /></a>
         </div>
+        <div>
+          <a href="https://twitter.com/WordPress"
+            ><img src="res/x-logo.png" alt="x-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/wordpress/"
+            ><img src="res/instagram-logo.png" alt="ig-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/company/wordpress"
+            ><img src="res/In-White-72.png" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/wordpress"
+            ><img src="res/yt-logov2.png" alt="" ;
+          /></a>
+        </div>
+      </div>
     </div>
     <!------------------------------------------------------------- FOOTER END ------------------------------------------------------------->
-
-</body>
-
+  </body>
 </html>
