@@ -23,7 +23,7 @@
         <button onclick="openShowCase()">Showcase</button>
         <button onclick="openHosting()">Hosting</button>
         <div id="dropdown">
-          <button id="dropdown_btn">Extend<span id="arrow"></span></button>
+          <button id="dropdown_btn">Extend<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="#">Themes</a></li>
             <li><a href="#">Plugins</a></li>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">Learn<span id="arrow"></span></button>
+          <button id="dropdown_btn">Learn<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="#">Learn WordPress</a></li>
             <li><a href="#">Documentation</a></li>
@@ -41,16 +41,16 @@
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">Community<span id="arrow"></span></button>
+          <button id="dropdown_btn">Community<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
-            <li><a href="#">Make WordPress</a></li>
-            <li><a href="#">Photo Directory</a></li>
-            <li><a href="#">Five for the Future</a></li>
+            <li><a href="MakeWordPress.html">Make WordPress</a></li>
+            <li><a href="PhotoDirectory.html">Photo Directory</a></li>
+            <li><a href="FiveForTheFuture.html">Five for the Future</a></li>
             <li><a href="#">Events</a></li>
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">About<span id="arrow"></span></button>
+          <button id="dropdown_btn">About<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="#">About WordPress</a></li>
             <li><a href="#">Enterprise</a></li>
@@ -58,8 +58,9 @@
         </div>
       </div>
       <div id="right-btns">
+        <input id="search-box" type="text" placeholder="Search...." />
         <button id="search">
-          <img src="res/search-for-light-bg.png" alt="search-logo" />
+          <div style="height: 25px; width: 25px;"><img src="res/search-black.png" alt="search-logo" style="width: 100%; height: 100%; object-fit: fill;"/></div>
         </button>
         <button id="getwordpress">Get WordPress</button>
       </div>
@@ -216,7 +217,7 @@
     <div id="footer">
       <div id="col1">
         <a href="#">About</a>
-        <a href="#">News</a>
+        <a href="news.html">News</a>
         <a href="#">Hosting</a>
         <a href="#">Privacy</a>
       </div>

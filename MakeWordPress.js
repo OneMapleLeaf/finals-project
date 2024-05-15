@@ -51,7 +51,7 @@ const openDevelopers = () => {
 
 //COMMUNITY DROPDOWN START
 const openMakeWordPress = () => {
-  window.location.href = "";
+  window.location.href = "MakeWordPress.html";
 };
 const openPhotoDirectory = () => {
   window.location.href = "";
@@ -89,25 +89,5 @@ document.addEventListener("click", (e) => {
   document.querySelectorAll("#dropdown.active").forEach((dropdown) => {
     if (dropdown === curDropDown) return;
     dropdown.classList.remove("active");
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const searchButton = document.querySelector('#search');
-  const searchBox = document.querySelector('#search-box');  
-
-  searchButton.addEventListener('click', () => {
-    if (searchBox.style.display !== 'block') {
-      searchBox.style.display = 'block';
-      searchBox.focus();
-    } else {
-      searchBox.style.display = 'none';
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target !== searchButton && !e.target.closest('#search-box')) {
-      searchBox.style.display = 'none';
-    } 
   });
 });

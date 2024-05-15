@@ -1,0 +1,2933 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+#arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+
+#MakeWordPressBanner {
+	background-color: #f7f7f7;
+	height: 60px;
+	font-size:28px;
+	padding-left: 180px;
+	padding-top:14px;
+}
+
+#content {
+	background-color:#0174a2;
+	height:280px;
+	top: 0;
+    width: 100%;
+}
+
+#leftSide{
+    float: left;
+	height: auto;
+    width: 64%;
+}
+
+#mainIntro {
+   margin-left:180px;
+   margin-top:50px;
+   line-height: 35px;
+   font-size:25px;
+   font-weight: none;
+}
+
+#subIntro {
+	margin-left:180px;
+	margin-top:15px;
+	line-height: 25px;
+}
+
+#rightSide {
+	float: left;
+    width: 30%;
+    height: 100px;
+}
+
+#image{
+	margin-left:62px;
+	margin-top:40px;
+	height: 150px;
+	width: 100%;
+}
+
+#summit {
+    box-sizing: border-box;
+	border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#MakeWordPressNavBar {
+    background-color: #333333;
+    color: white;
+    height: 35px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 0 20px 0 152px; 
+}
+
+#MakeWordPressNavBar div {
+    padding: 5px 35px; 
+}
+
+#MakeWordPressNavBar div:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#greybackground {
+	width:100%;
+	height:100px;
+	background-color: #efefef;
+	padding-left:180px;
+	padding-top: 55px;
+	font-size:23px;
+	color: #444444;
+}
+
+
+#vessel {
+	width:100%;
+	height:3400px;
+	background-color: #efefef;
+}
+
+#core {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:24px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 10px;
+	background-color:white;
+}
+
+#core #coreTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+#core #coreTitle:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+#core #coreInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+
+#coreFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#coreNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#coreFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#coreFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+
+#coreSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#coreTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#coreSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#coreSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#coreThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#coreThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#coreThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#coreThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#design {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:30px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 10px;
+	background-color:white;
+	
+}
+
+#design #designTitle {
+	font-size:24px;	
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+#design #designTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+
+#design #designInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+
+#designFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#designNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#design #officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#designSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#designTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#designSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#designSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#designSecondDetails #onSlack{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#designThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#designThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#designThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#designThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#design #onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#mobile {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:35px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 33px;
+	background-color:white;
+}
+
+#mobile #mobileTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+	
+}
+
+#mobile #mobileTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#mobile #mobileInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+
+#accessibility {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:34px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 33px;
+	background-color:white;
+}
+
+#accessibility  #accessibilityTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#accessibility  #accessibilityTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#accessibility  #accessibilityInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#accessibilityFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#accessibilityNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#accessibility  #officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#accessibilityFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#accessibilityFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+
+#accessibilitySecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#accessibilityTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#accessibilitySecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#accessibilitySecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#accessibility  #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#accessibilityThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#accessibilityThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#accessibilityThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#accessibilityThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#accessibility  #onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#polyglots {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:25px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#polyglots #polyglotsTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#polyglots #polyglotsTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#polyglots #polyglotsInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#polyglotsFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#polyglotsNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#polyglotsHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#polyglotsFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#polyglotsFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#polyglotsSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#polyglotsTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#polyglotsSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#polyglotsSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#polyglots #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#polyglotsThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#polyglotsThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#polyglotsThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#polyglotsThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#support {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:25px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#support #supportTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#support #supportTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#support #supportInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#supportFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#supportNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#supportHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#supportFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#supportFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#supportSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#supportTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#supportSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#supportSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#support #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#supportThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#supportThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#supportThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#supportThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#documentation {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:27px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#documentation #documentationTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#documentation #documentationTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#documentation #documentationInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#documentationFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#documentationNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#documentationHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#documentationFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#documentationFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#documentationSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#documentationTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#documentationSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#documentationSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#documentation #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#documentationThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#documentationThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#documentationThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#documentationThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#themes {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:29px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#themes #themesTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#themes #themesTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#themes#themesInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#themesFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#themesNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#themesHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#themesFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#themesFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#themesSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#themesTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#themesSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#themesSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#themes #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#themesThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#themesThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#themesThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#themesThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#plugIn {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:30px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 33px;
+	background-color:white;
+}
+
+#plugIn #plugInTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+	
+}
+
+
+#plugIn #plugInTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#plugIn #plugInInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#community {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:23px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#community #communityTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#community #communityTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#community #communityInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#communityFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#communityNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#communityHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#communityFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#communityFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#communitySecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#communityTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#communitySecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#communitySecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#community #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#communityThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#communityThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#communityThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#communityThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#meta {
+	float: left;
+	height: 300px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:36px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#meta #metaTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#meta #metaTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#meta #metaInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#metaFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#metaNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#metaHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#metaSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#metaTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#metaSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#metaSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#meta #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#metaThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#metaThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#metaThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#metaThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#training {
+	float: left;
+	height: 300px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:23px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#training #trainingTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#training #trainingTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#training #trainingInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#trainingFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#trainingNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#trainingHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#trainingFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#trainingFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#trainingSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#trainingTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#trainingSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#trainingSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#training #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#trainingThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#trainingThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#trainingThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#trainingThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#test {
+	float: left;
+	height: 295px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:23px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#test #testTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#test #testTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#test #testInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#testFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#testNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#testHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#testFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#testFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#testSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#testTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#testSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#testSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#test #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#testThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#testThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#testThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#testThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#tv {
+	float: left;
+	height: 295px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:28px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#tv #tvTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#tv #tvTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#tv #tvInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#tvFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#tvNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tvHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#tvSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#tvTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tvSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#tvSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#tv #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tvThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#tvThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tvThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#tvThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#marketing {
+	float: left;
+	height: 215px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:30px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 33px;
+	background-color:white;
+}
+
+#marketing #marketingTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+	
+}
+
+#marketing #marketingTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#marketing #marketingInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+
+#CLI {
+	float: left;
+	height: 215px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:28px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 32px;
+	background-color:white;
+}
+
+#CLI #CLITitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#CLI #CLITitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#CLI #CLIInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#CLIFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#CLINextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#CLIHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#CLISecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#CLITime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#CLISecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#CLISecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#CLI #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#CLIThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#CLIThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#CLIThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#CLIThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#hosting {
+	float: left;
+	height: 230px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:28px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#hosting #hostingTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#hosting #hostingTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#hosting #hostingInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#hostingFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#hostingFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#hostingFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+#hostingNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#hostingHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#hostingSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#hostingTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#tide {
+	float: left;
+	height: 230px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:28px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 32px;
+	background-color:white;
+}
+
+#tide #tideTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#tide #tideTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#tide #tideInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#tideFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#tideNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tideHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#tideSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#tideTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tideSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#tideSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#tide #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tideThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#tideThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#tideThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#tideThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#openVerse {
+	float: left;
+	height: 280px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:27px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#openVerse #openVerseTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#openVerse #openVerseTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#openVerse #openVerseInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#openVerseFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#openVerseNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#openVerseSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#openVerseTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#openVerseSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#openVerseSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#openVerse #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#openVerseThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#openVerseThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#openVerseThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#openVerseThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#photos {
+	float: left;
+	height: 280px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:27px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#photos #photosTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#photos #photosTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#photos #photosInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#photosFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#photosNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#photosSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#photosTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#photosSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#photosSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#photos #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#photosThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#photosThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#photosThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#photosThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#corePerf {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:30px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#corePerf #corePerfTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#corePerf #corePerfTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#corePerf #corePerfInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#corePerfFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#corePerfNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#corePerfHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#corePerfFirstDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+}
+
+#corePerfFirstDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#corePerfSecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#corePerfTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#corePerfSecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#corePerfSecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#corePerf #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#corePerfThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#corePerfThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#corePerfThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#corePerfThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+
+#sustainability {
+	float: left;
+	height: 250px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:27px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:10px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#sustainability #sustainabilityTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#sustainability #sustainabilityTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#sustainability #sustainabilityInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+#sustainabilityFirstDetails {
+	margin-top:10px;
+	display:flex;
+	justify-content: flex-start; 
+	padding: 5px  0 0 0; 
+}
+
+#sustainabilityNextMeet{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#officeHours {
+	font-size:11px;
+	font-weight:bold;
+	color:#727272;
+	font-style:italic;
+	margin-right:5px;
+}
+
+#sustainabilitySecondDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#sustainabilityTime{
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#sustainabilitySecondDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#sustainabilitySecondDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#sustainability #onSlack {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#sustainabilityThirdDetails {
+	display:flex;
+	justify-content: flex-start; 
+}
+
+#sustainabilityThirdDetails #or {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#sustainabilityThirdDetails a {
+	font-size:11px;
+	color:#78abc2;
+	font-style:italic;
+	text-decoration: underline;
+	margin-right:3px;
+}
+
+#sustainabilityThirdDetails a:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+}
+
+#onMatrix {
+	font-size:11px;
+	color:#727272;
+	font-style:italic;
+	margin-right:3px;
+}
+
+#mediaCorps {
+	float: left;
+	height: 157px;
+    width: 37%;
+	padding-left: 27px;
+	padding-top:28px;
+	padding-right:17px;
+	line-height:20px;
+	color: black;
+	box-sizing: border-box;
+	border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	margin-left:190px;
+	margin-right:20px;
+	margin-top: 30px;
+	background-color:white;
+}
+
+#mediaCorps #mediaCorpsTitle {
+	font-size:24px;
+	font-weight:bold;
+	color:#21759b;
+	padding-bottom: 10px;
+}
+
+#mediaCorps #mediaCorpsTitle:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	color:#d54e21;
+	text-decoration: underline;
+}
+
+#mediaCorps #mediaCorpsInfo {
+	font-size:16px;
+	line-height:23px;
+}
+
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/
