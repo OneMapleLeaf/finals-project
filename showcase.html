@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="showcase.css" />
+    <script defer src="showcase.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!------------------------------------------------------------- HEADER START ------------------------------------------------------------->
+    <div id="header">
+      <div id="logo-container">
+        <button onclick="openIndex()">
+          <img
+            src="res/WordPress-logotype-wmark-white.png"
+            alt="WordPress-logotype-wmark"
+          />
+        </button>
+      </div>
+      <div id="nav">
+        <button onclick="openNews()">News</button>
+        <button onclick="openShowCase()" style="
+        text-decoration: underline;
+        color: #7b90ff;
+        border-bottom: 5px solid #7b90ff;
+        background-color: #1c2024;
+      ">Showcase</button>
+        <button onclick="openHosting()">Hosting</button>
+        <div id="dropdown">
+          <button id="dropdown_btn">Extend <i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Patterns</a></li>
+            <li><a href="#">Blocks</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">Learn<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">Learn WordPress</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Developers</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">Community<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="MakeWordPress.html">Make WordPress</a></li>
+            <li><a href="PhotoDirectory.html">Photo Directory</a></li>
+            <li><a href="FiveForTheFuture.html">Five for the Future</a></li>
+            <li><a href="#">Events</a></li>
+          </div>
+        </div>
+        <div id="dropdown">
+          <button id="dropdown_btn">About<i id="down-arrow"></i></button>
+          <div id="dropdown-menu">
+            <li><a href="#">About WordPress</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </div>
+        </div>
+      </div>
+      <div id="right-btns">
+        <input id="search-box" type="text" placeholder="Search...." />
+        <button id="search">
+          <div style="height: 25px; width: 25px">
+            <img
+              src="res/search.png"
+              alt="search-logo"
+              style="width: 100%; height: 100%; object-fit: fill"
+            />
+          </div>
+        </button>
+        <button id="getwordpress">Get WordPress</button>
+      </div>
+    </div>
+    <!------------------------------------------------------------- HEADER END ------------------------------------------------------------->
+    <!------------------------------------------------------------- BODY START ------------------------------------------------------------->
+    <div id="body-container">
+      <div id="showcase-container">
+        <div id="sc-cont-1">
+          <h1>Showcase</h1>
+          <p>Star-studdded sites built with WordPress</p>
+          <div>
+            <div><a href="#">The New York Times Company</a></div>
+            <div><a href="#">nytco.com</a></div>
+            <div><a href="#">Publication</a></div>
+          </div>
+        </div>
+        <div id="sc-cont-2">
+          <div id="sc-cont-2-img-cont">
+            <img src="res/newyorktimes.png" alt="newyorktimes" />
+          </div>
+        </div>
+      </div>
+      <div id="showcase-examples">
+          <div id="sc-ex-header">
+            <input type="text" id="searc-sites" placeholder="Search sites...">
+            <button><img src="res/search-black.png" alt=""></button>
+          </div>
+          <div id="sc-body-cont">
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/line-hotels.png" alt="line-hotels">
+                <div id="sc-img-desc"><span>The Line Hotels</span><a href="#">Business</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/tonal.png" alt="tonal">
+                <div id="sc-img-desc"><span>Tonal</span><a href="#">Business</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/women-in-soccer.png" alt="women-in-soccer">
+                <div id="sc-img-desc"><span>Women in Soccer</span><a href="#">Community</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/ad-dal-pozzo.png" alt="ad-dal-pozzo">
+                <div id="sc-img-desc"><span>AD Dal Pozzo</span><a href="#">Store</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/pichi-avo.png" alt="pichi-avo">
+                <div id="sc-img-desc"><span>PichiAvo</span><a href="#">Creative</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/noma.png" alt="noma">
+                <div id="sc-img-desc"><span>Noma</span><a href="#">Business</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/landia.png" alt="landia">
+                <div id="sc-img-desc"><span>Landia</span><a href="#">Creative</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/caeserstone.png" alt="caeserstone">
+                <div id="sc-img-desc"><span>Caeserstone</span><a href="#">Store</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/the-noguchi-museum.png" alt="the-noguchi-museum">
+                <div id="sc-img-desc"><span>The Noguchi Museum</span><a href="#">Creative</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/moooi.png" alt="moooi">
+                <div id="sc-img-desc"><span>Moooi</span><a href="#">Business</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/ubisoft-quebec.png" alt="ubisoft-quebec">
+                <div id="sc-img-desc"><span>Ubisoft Québec</span><a href="#">Business</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/ray-charles-video-museum.png" alt="ray-charles-video-museum">
+                <div id="sc-img-desc"><span>Ray Charles Video Museum</span><a href="#">Creative</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/art-gallery-of-ballarat.png" alt="art-gallery-of-ballarat">
+                <div id="sc-img-desc"><span>Art Galley of Ballarat</span><a href="#">Creative</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/steffie-de-leeuw.png" alt="steffie-de-leeuw">
+                <div id="sc-img-desc"><span>Ray Charles Video Museum</span><a href="#">Creative</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/designmuseum-danmark.png" alt="designmuseum-danmark">
+                <div id="sc-img-desc"><span>Designmuseum Danmark</span><a href="#">Creative</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/te-tuhi.png" alt="te-tuhi">
+                <div id="sc-img-desc"><span>Te Tuhi</span><a href="#">Creative</a></div>
+              </div>
+            </div>
+
+            <div id="sc-img-cont">
+              <div id="sc-img-1">
+                <img src="res/zoox.png" alt="zoox">
+                <div id="sc-img-desc"><span>Art Galley of Ballarat</span><a href="#">Business</a></div>
+              </div>
+              <div id="sc-img-2">
+                <img src="res/rolling-stone-web.png" alt="rolling-stone-web">
+                <div id="sc-img-desc"><span>Rolling Stone</span><a href="#">Publication</a></div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+      <div id="featured-container">
+        <div id="fc-1">
+          <h1>Feeling inspired?</h1>
+          <p>Start building a website you love on the open source platform that powers the web.</p>
+          <button>Get WordPress</button>
+        </div>
+        <div id="fc-2">
+          <h1>Want to be featured?</h1>
+          <p>Join other beautifully designed sites in the WordPress Showcase by filling out this form.</p>
+          <button>Submit a site</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!------------------------------------------------------------- BODY END ------------------------------------------------------------->
+    <!------------------------------------------------------------- FOOTER START ------------------------------------------------------------->
+    <div id="footer">
+      <div id="col1">
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Hosting</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div id="col2">
+        <a href="">Showcase</a>
+        <a href="">Themes</a>
+        <a href="">Plugins</a>
+        <a href="">Patterns</a>
+      </div>
+      <div id="col3">
+        <a href="">Learn</a>
+        <a href="">Documentation</a>
+        <a href="">Developers</a>
+        <a href="">WordPress.tv ↗</a>
+      </div>
+      <div id="col4">
+        <a href="">Get Involved</a>
+        <a href="">Events</a>
+        <a href="">Donate ↗</a>
+        <a href="">Swag Store ↗</a>
+      </div>
+    </div>
+    <div id="footer-2">
+      <div style="display: flex; align-items: center">
+        <div id="logo-container-2">
+          <a href="#"
+            ><img
+              src="res/WordPress-logotype-wmark-white.png"
+              alt="wordpress-logo"
+          /></a>
+        </div>
+        <a href="index.html" id="wordpressorg"
+          ><span style="font-weight: bold"
+            ><span style="font-size: 20px">W</span>ORD<span
+              style="font-size: 20px"
+              >P</span
+            >RESS</span
+          ><span>.ORG</span></a
+        >
+      </div>
+      <span style="font-family: 'Times New Roman', Times, serif"
+        >CODE IS POETRY</span
+      >
+      <div id="social-logo-container">
+        <div>
+          <a href="https://www.facebook.com/WordPress/"
+            ><img src="res/fb-icon.png" alt="fb-icon"
+          /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/WordPress"
+            ><img src="res/x-logo.png" alt="x-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/wordpress/"
+            ><img src="res/instagram-logo.png" alt="ig-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/company/wordpress"
+            ><img src="res/In-White-72.png" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/wordpress"
+            ><img src="res/yt-logov2.png" alt="" ;
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------- FOOTER END ------------------------------------------------------------->
+  </body>
+</html>
