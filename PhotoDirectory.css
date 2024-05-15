@@ -230,21 +230,24 @@ select {
 	color: #0073aa;
 	position:relative;
 }
-#photo img:hover{
 
-}
 #photo {
   width: 20%;
-  padding: 12px 12px;
+  margin: 12px 12px;
+  
 }
 #photo img {
   cursor: pointer;
   height: 100%;
   width: 100%;
   object-fit: fill;
+  transition: border 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
-#photo img:hover {
-  border: 5px solid #0073aa;
+#photo img:hover{
+  cursor: pointer;
+  border: 2px solid #0073aa;
+  transform: scale(.99);
 }
 #photo-row-cont {
   display: flex;
