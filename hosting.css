@@ -170,6 +170,115 @@ a {
 } */
 
 /*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+#body-container{
+  height: auto;
+  padding: 32px 0;
+}
+#body-title-cont h1{
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+}
+#body-title-cont {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 82px 0;
+  align-items: center;
+  background-color: #0073AA;
+  width: 100%;
+}
+#bc-content{
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+#bc-content div > p > a {
+  color: #0073AA;
+  text-decoration: underline;
+}
+#bc-content div > p {
+  line-height: 32px;
+}
+#bc-content div{
+  padding: 4px 0;
+  font-weight: lighter;
+  font-size:1.1rem;
+  width: 50%;
+}
+
+#hosting-content{
+  display: flex;
+  height: auto;
+}
+
+#hosting-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 25%;
+}
+#hosting-img-cont{
+  /* margin: 32px 0; */
+  margin-bottom: 80%;
+  height: 100px;
+  width: 100px;
+}
+#hosting-img-cont img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#hosting-text-cont{
+  padding: 12px;
+  width: 75%;
+}
+#hosting-text-cont div {
+  margin-bottom: 90px;
+}
+#htc {
+  font-size: 1.1rem;
+  height: 20%;
+  width: 75%;
+}
+#htc h2{
+  font-weight: 100;
+}
+#htc a {
+  color: #0073AA;
+}
+#htc a:hover{
+  text-decoration: underline;
+}
+#htc * {
+  padding: 12px 0;
+}
+#hosting-feedback {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hosting-feedback-cont{
+  font-size: 1.1rem;
+  line-height: 28px;
+  width: 50%;
+}
+#hosting-feedback-cont div {
+  margin-bottom: 32px;
+}
+#hosting-feedback-cont h1 {
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
 
 
 /*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
