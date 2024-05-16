@@ -258,6 +258,9 @@ a {
 #htc * {
   padding: 12px 0;
 }
+#htc p {
+  line-height: 32px;
+}
 #hosting-feedback {
   display: flex;
   justify-content: center;
@@ -278,6 +281,7 @@ a {
   font-weight: 100;
   margin-bottom: 24px;
 }
+
 /*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
 
 
