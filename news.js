@@ -66,10 +66,10 @@ const openEvents = () => {
 
 //ABOUT DROPDOWN START
 const openAboutWordPress = () => {
-  window.location.href = "";
+  window.location.href = "about.html";
 };
 const openEnterprise = () => {
-  window.location.href = "";
+  window.location.href = "enterprise.html";
 };
 
 // Dropdown Function

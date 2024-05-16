@@ -10,6 +10,58 @@ const openNews = () => {
 const openShowCase = () => {
   window.location.href = "showcase.html";
 };
+//EXTEND DROPDOWN START
+const openThemes = () => {
+  window.location.href = "";
+};
+const openPlugins = () => {
+  window.location.href = "";
+};
+const openPatterns = () => {
+  window.location.href = "";
+};
+const openBlocks = () => {
+  window.location.href = "";
+};
+//EXTEND DROPDOWN END
+
+//LEARN DROPDOWN START
+const openLearnWordPress = () => {
+  window.location.href = "";
+};
+const openDocumentation = () => {
+  window.location.href = "";
+};
+const openForums = () => {
+  window.location.href = "";
+};
+const openDevelopers = () => {
+  window.location.href = "";
+};
+//LEARN DROPDOWN END
+
+//COMMUNITY DROPDOWN START
+const openMakeWordPress = () => {
+  window.location.href = "";
+};
+const openPhotoDirectory = () => {
+  window.location.href = "";
+};
+const openFiveForTheFuture = () => {
+  window.location.href = "";
+};
+const openEvents = () => {
+  window.location.href = "";
+};
+//COMMUNITY DROPDOWN END
+
+//ABOUT DROPDOWN START
+const openAboutWordPress = () => {
+  window.location.href = "about.html";
+};
+const openEnterprise = () => {
+  window.location.href = "enterprise.html";
+};
 
 document.addEventListener('click', e => {
   const isDropdownButton = e.target.matches('#dropdown_btn');

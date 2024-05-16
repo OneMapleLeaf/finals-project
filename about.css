@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+  z-index: 2;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+#arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+#navabout{
+ 
+  width: 25%;
+  display: flex;
+  margin-left: 930px;
+  justify-content: space-evenly;
+  top: 0;
+}
+
+
+#try{
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+#aboutonecont{
+  background-color: #F0EDE7;
+  z-index: 1;
+  padding-bottom: 20px;
+  display: flex;
+  padding-top: 20px;
+  overflow: visible;
+  top: 0;
+  width: 100%;
+  position: sticky;
+  border-bottom: 1px solid gray;
+}
+
+#dropdownabout {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-menu-about{
+  position:absolute;
+  display: block;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+  background-color: #F0EDE7;
+  
+}
+
+#dropdown-menu-about li{
+  padding: 20px;
+  font-size: 14px;
+  line-height: 0px;
+  
+}
+
+#dropdown-menu-about a{
+  display: block;
+  width: 100%;
+
+}
+
+#dropdown-menu-about a:hover{
+  text-decoration: underline;
+}
+
+#dropdownabout.active > #dropdown_btnab + #dropdown-menu-about{
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+
+}
+
+#dropdown_btnab span{
+  pointer-events: none;
+}
+
+#dropdown_btnab {
+  padding: 0px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  background-color: #F0EDE7;
+
+}
+
+#dropdownabout button{
+  cursor: pointer;
+}
+
+#dropdownabout.active button{
+  transition: 150ms ease-in-out;
+  text-decoration: underline;
+}
+
+#arrowabout{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle; 
+
+}
+
+#abouttwocont{
+  background-color: #F0EDE7;
+  padding: 20px;
+}
+
+#misyon p{
+  font-family:'Courier New', Courier, monospace;
+  font-stretch:wider;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+#abouttwocont{
+  padding: 60px 0px 0px 180px; 
+}
+
+#abouttwocont #minibrush img{
+  height: 10px;
+  width: 140px;
+  position: relative;
+  right: 14px;
+}
+
+#abouttwocont #democrat p{
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: 108px;
+  position: relative;
+  padding: 0px 0px 0px 570px;
+  font-weight: lighter;
+  bottom: 32px;
+}
+
+#abouttwocont #brushyarr img{
+  height: 210px;
+  position: relative;
+  bottom: 40px;
+  left: 280px;
+}
+
+#abouttwocont #publi p{
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: 108px;
+  position: relative;
+  font-weight: lighter;
+  bottom: 40px;
+  right: 46px;
+}
+
+#abouttwocont #mottox p{
+  text-align: right;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: light;
+  line-height: 30px;
+  position: relative;
+  bottom: 70px;
+  right: 180px;
+}
+
+#aboutthreecont{
+  background-color:  #F0EDE7;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding-bottom: 160px;
+}
+
+#aboutthreecont #storya{
+    padding: 60px 0px 0px 130px;
+    
+}
+
+#aboutthreecont #storya p{
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: 108px;
+  position: relative;
+  font-weight: lighter;
+  left: 20px;
+}
+
+#defilong a{
+  font-family: 'Courier New', Courier, monospace;
+  color: #3858e9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#defilong p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 28px;
+
+}
+
+#defilong{
+  position: relative;
+  left: 120px;
+  width: 50%;
+  bottom: 0px;
+  top: 80px;
+}
+
+#defilong a:hover{
+  text-decoration: none;
+}
+
+
+
+#aboutfourcont #mizion {
+    float: left;
+    width: 44%;
+    height: 600px;
+    background-color: #F0EDE7;
+    border-bottom: 1px solid gray;
+}
+
+
+#aboutfourcont #defilongtwo{
+  float: left;
+  width: 56%;
+  height: 600px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+}
+
+#aboutfourcont #mizion p{
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: 108px;
+  position: relative;
+  font-weight: lighter;
+  left: 150px;
+  top: 60px;
+}
+
+#aboutfourcont #mizion img{
+  height: 54px;
+  position: relative;
+  top: 55px;
+  left: 150px;
+}
+
+#aboutfourcont #defilongtwo p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 28px;
+  position: relative;
+  top: 82px;
+}
+
+#aboutfivecont #kalayaan{
+  width: 100%;
+  background-color: #F0EDE7;
+  float: left;
+  height: 245px;
+}
+
+#aboutfivecont #kalayaan p{
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: 108px;
+  position: relative;
+  font-weight: lighter;
+  top: 60px;
+  padding-left: 150px;
+  z-index: 0;
+}
+
+#aboutfivecont #kalayaan img{
+  height: 80px;
+  position: relative;
+  top: 36px;
+  left: 270px;
+}
+
+#aboutfivecont #kalayaanlaman #numberzero{
+  width: 44%;
+  float: left;
+  background-color: #F0EDE7;
+  height: 270px;
+  border-bottom: 1px solid gray;
+
+}
+
+#aboutfivecont #kalayaanlaman #defilongthree{
+  float: left;
+  width: 56%;
+  padding-bottom: 0px;
+  background-color: #F0EDE7;
+  height: 270px;
+  border-bottom: 1px solid gray;
+}
+
+#aboutfivecont #kalayaanlaman #numberzero img{
+  height: 110px;
+  position: relative;
+  top: 159.5px;
+  left: 130px;
+
+}
+
+#aboutfivecont #defilongthree p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 28px;
+}
+
+#aboutfivecont #defilongthree a{
+  font-family: 'Courier New', Courier, monospace;
+  color: #3858e9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#aboutfivecont #defilongthree a:hover{
+  text-decoration: none;
+}
+
+#aboutfivecont #kalayaanlamantwo #numberone{
+  width: 44%;
+  float: left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+}
+
+#aboutfivecont #kalayaanlamantwo #numberone img{
+  height: 110px;
+  position: relative;
+  left: 150px;
+  top: 11px;
+}
+
+#aboutfivecont #kalayaanlamantwo #defilongfour{
+  width: 56%;
+  float: left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+
+}
+
+#aboutfivecont #kalayaanlamantwo #defilongfour p{
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 28px;
+  top:  35px;
+}
+
+#aboutfivecont #kalayaanlamanthree #numbertwo{
+  width: 44%;
+  float: left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+}
+
+#aboutfivecont #kalayaanlamanthree #defilongfive{
+  width: 56%;
+  float: left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+
+}
+
+#aboutfivecont #kalayaanlamanthree #numbertwo img{
+  height: 110px;
+  left: 150px;
+  top: 11.5px;
+  position: relative;
+}
+
+#aboutfivecont #kalayaanlamanthree #defilongfive p{
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  top: 52px;
+}
+
+#aboutfivecont #kalayaanlamanfour #numberthree{
+  width: 44%;
+  float:left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+}
+
+#aboutfivecont #kalayaanlamanfour #defilongsix{
+  width: 56%;
+  float: left;
+  height: 122px;
+  background-color: #F0EDE7;
+  border-bottom: 1px solid gray;
+
+}
+
+#aboutfivecont #kalayaanlamanfour #defilongsix p{
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  top: 52px;
+}
+
+#aboutfivecont #kalayaanlamanfour #numberthree img{
+  height: 110px;
+  left: 145px;
+  position: relative;
+  top: 11px;
+}
+
+#aboutlastcont{
+  padding: 64px 0;
+  width: 100%;
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #F0EDE7;
+}
+
+#aboutlastcont #leftyyy a{
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutlastcont #centeryyy a{
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutlastcont #rightyyy a{
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutlastcont p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 25px;
+}
+
+#aboutlastcont a{
+  color: #3858E9;
+  border-bottom: 1px solid black;
+  line-height: 50px;
+}
+
+#aboutlastcont #leftyyy p{
+  border-bottom: 1px solid black;
+}
+#aboutlastcont #centeryyy p{
+  border-bottom: 1px solid black;
+}
+#aboutlastcont #rightyyy p{
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/

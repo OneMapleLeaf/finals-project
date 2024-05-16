@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+#arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+#entercont{
+ 
+  background-color: #3858E9;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#firstmark h1{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 120px;
+  margin-left: 260px;
+}
+
+#firstmoto p{
+  color: white;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 260px;
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+#suncont{
+  background-color: #23282D;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  display: flex;
+}
+
+#sun img{
+  width: 80px;
+  height: 25px;
+  position: relative;
+  left: 364px;
+}
+
+#people img{
+  width: 80px;
+  height: 30px;
+  position: relative;
+  left: 424px;
+}
+
+
+#reader img{
+  position: relative;
+  width: 180px;
+  height: 30px;
+  left: 484px;
+}
+
+#wwd img{
+  position: relative;
+  width: 90px;
+  height: 25px;
+  left: 544px;
+}
+
+#variety img{
+  position: relative;
+  left: 604px;
+  width: 95px;
+  height: 30px;
+}
+
+#time img{
+  position: relative;
+  top: 82px;
+  height: 30px;
+  right: 125px;
+}
+
+#ted img{
+  position: relative;
+  height: 24px;
+  top: 84px;
+  right: 64px;
+}
+
+#facebook img{
+  position: relative;
+  height: 24px;
+  width: 130px;
+  top: 82px;
+  right: 12px;
+}
+
+#microsoft img{
+  position: relative;
+  height: 30px;
+  top: 80px;
+  left: 48px;
+
+}
+
+#cnn img{
+  position: relative;
+  height: 30px;
+  top: 76px;
+  left: 100px;
+}
+
+#deficont{
+ 
+  padding-top: 85px;
+  padding-bottom: 85px;
+  
+}
+
+#entertitle h2{
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  margin-left: 258px;
+}
+
+#meaning p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 258px;
+  margin-top: 24px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+#deficontwo{
+  display: flex;
+  padding-bottom: 160px;
+}
+
+#left{
+  width: 50%;
+  position: relative;
+  left: 258px;
+  line-height: 32px;
+}
+#right{
+  width: 40%;
+  position: relative;
+  left: 34px;
+  line-height: 32px;
+}
+
+#unanglaman{
+  position: relative;
+  top: 10px;
+}
+
+#ikalawangpamagat{
+  position: relative;
+  top: 40px;
+}
+
+#ikaapatpamagat{
+  position: relative;
+  top: 40px;
+}
+
+#ikalawanglaman{
+  position: relative;
+  top: 50px;
+}
+
+#ikatlonglaman{
+  position: relative;
+  top: 10px;
+}
+
+#ikaapatlaman{
+  position: relative;
+  top: 50px;
+}
+
+#unangpamagat h3{
+  font-size: 20px;
+  font-weight: light;
+}
+
+#ikalawangpamagat h3{
+  font-size: 20px;
+  font-weight: light;
+}
+
+#ikatlongpamagat h3{
+  font-size: 20px;
+  font-weight: light;
+}
+
+#ikaapatpamagat h3{
+  font-size: 20px;
+  font-weight: light;
+}
+
+#deficonthree{
+  border: 1px solid lightgray;
+  display: flex;
+}
+
+#extensibility{
+  border: 1px solid lightgray;
+  position: relative;
+  width: 37%;
+  padding-bottom: 110px;
+  padding-top: 70px;
+  padding-left: 260px;
+}
+#security{
+  border: 1px solid lightgray;
+  position: relative;
+  width:25%;
+  padding-bottom: 110px;
+  padding-top: 70px;
+  padding-left: 80px;
+}
+#opensource{
+  border: 0.5px solid lightgray;
+  position: relative;
+  border-right: none;
+  width:38%;
+  padding-bottom: 110px;
+  padding-top: 70px;
+  padding-left: 72px;
+}
+
+#excontent p{
+  line-height: 30px;
+  position: relative;
+  top: 44px;
+
+}
+
+#secontent p{
+  line-height: 30px;
+  position: relative;
+  top: 44px;
+}
+#opencontent p{
+  line-height: 30px;
+  position: relative;
+  top: 44px;
+}
+
+#extitle h2{
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  position: relative;
+  top: 18px;
+}
+
+#sectitle h2{
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  position: relative;
+  top: 18px;
+}
+
+#opentitle h2{
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  position: relative;
+  top: 18px;
+}
+#exten img{
+  height: 60px;
+}
+
+#secu img{
+  height: 60px;
+}
+
+#opens img{
+  height: 60px;
+}
+
+#deficonfour{
+  padding-top:90px;
+  background-color: #F6F6F6;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+#get{
+    position: relative;
+    left: 260px;
+}
+
+#get a{
+  font-weight: normal;
+  color: #3858E9;
+  font-size: 90px;
+  font-family: Arial;
+  position: relative;
+}
+
+
+#arrew{
+  float: right;
+  width: fit-content;
+  left: 20px;
+}
+
+#arrew img{
+  height: 100px;
+  position: relative;
+  transition: 0.5s;
+  width: fit-content;
+  left: 20px;
+}
+  
+#deficonfour > #get:hover a{
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+  text-decoration-thickness: 1px;
+}
+
+#deficonfour > #get:hover img{
+  left: 40px;
+  cursor: pointer;
+  transition: right ease-in-out 0.5s;
+}
+
+#deficonfive{
+  display: flex;
+  padding-bottom: 80px;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+#kaliwa a{
+  color: #3858E9;
+}
+
+#kaliwa a:hover{
+  text-decoration: underline;
+}
+
+#gitna a{
+  color: #3858E9;
+}
+
+#gitna a:hover{
+  text-decoration: underline;
+}
+
+#kanan a{
+  color: #3858E9;
+}
+
+#kanan a:hover{
+  text-decoration: underline;
+}
+
+#deficonfive h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: lighter;
+
+}
+
+#deficonfive a{
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#kaliwa{
+  padding-right: 60px;
+}
+
+#kanan{
+  padding-left: 60px;
+}
+
+#kaliwalaman{
+  padding-top: 22px;
+  padding-bottom: 82px;
+}
+
+#kaliwalamantwo{
+  padding-top: 22px;
+}
+
+#gitnalaman{
+  padding-top: 22px;
+  padding-bottom: 131px;
+}
+
+#kananlaman{
+  padding-top: 22px;
+  padding-bottom: 130px;
+}
+
+#deficonsix{
+  width: fit-content;
+  background-color: #23282D;
+}
+
+#bannirr{
+  width: 100%;
+}
+
+#bannirr img{
+  width: 1519px;
+  padding: 0;
+  margin: 0;
+}
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/
