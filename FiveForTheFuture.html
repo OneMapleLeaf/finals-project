@@ -32,7 +32,7 @@
         <button onclick="openShowCase()">Showcase</button>
         <button onclick="openHosting()">Hosting</button>
         <div id="dropdown">
-          <button id="dropdown_btn">Extend<span id="arrow"></span></button>
+          <button id="dropdown_btn">Extend <i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="#">Themes</a></li>
             <li><a href="#">Plugins</a></li>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">Learn<span id="arrow"></span></button>
+          <button id="dropdown_btn">Learn<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="#">Learn WordPress</a></li>
             <li><a href="#">Documentation</a></li>
@@ -50,9 +50,11 @@
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">Community<span id="arrow"></span></button>
+          <button id="dropdown_btn">Community<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
-            <li><a href="MakeWordPress.html">Make WordPress</a></li>
+            <li>
+              <a href="MakeWordPress.html">Make WordPress</a>
+            </li>
             <li><a href="PhotoDirectory.html">Photo Directory</a></li>
             <li>
               <a
@@ -65,7 +67,7 @@
           </div>
         </div>
         <div id="dropdown">
-          <button id="dropdown_btn">About<span id="arrow"></span></button>
+          <button id="dropdown_btn">About<i id="down-arrow"></i></button>
           <div id="dropdown-menu">
             <li><a href="about.html">About WordPress</a></li>
             <li><a href="enterprise.html">Enterprise</a></li>
@@ -73,6 +75,7 @@
         </div>
       </div>
       <div id="right-btns">
+        <input id="search-box" type="text" placeholder="Search...." />
         <button id="search">
           <div style="height: 25px; width: 25px">
             <img
