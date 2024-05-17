@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li,
+  a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  /*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+  #header {
+    background-color: #23282d;
+  
+    height: 60px;
+    display: flex;
+    font-size: 14px;
+  }
+  #docu{
+    color: #7b90ff;
+  }
+
+  #docu:hover{
+    color: #7b90ff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #nav {
+    color: white;
+    background-color: #23282d;
+  }
+  #dropdown {
+    position: relative;
+  }
+  #dropdown-menu {
+    background-color: #1c2024;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200%;
+    padding: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+  }
+  #dropdown-menu li {
+    padding: 16px 0;
+    font-size: 16px;
+  }
+  #dropdown-menu a {
+    color: white;
+    display: block;
+    width: 100%;
+  }
+  #dropdown-menu a:hover {
+    text-decoration: underline;
+  }
+  #dropdown.active > #dropdown_btn + #dropdown-menu {
+    opacity: 1;
+    transition: opacity 0.5s;
+    transform: translateY(0px);
+    pointer-events: auto;
+  }
+  #dropdown_btn span {
+    pointer-events: none;
+  }
+  #header button {
+    background-color: #23282d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #dropdown.active button {
+    background-color: #1c2024;
+    transition: background-color 150ms ease-in-out;
+    text-decoration: underline;
+  }
+  #header button:hover,
+  #dropdown:hover button {
+    background-color: #1c2024;
+  }
+  #nav {
+    display: flex;
+  }
+  
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  #nav button {
+    height: 100%;
+    width: 108px;
+    padding: 18px 10px 14px;
+  }
+  #logo-container button {
+    /* padding: 16px 20px; */
+  
+    width: 69px;
+    height: 59px;
+  }
+  
+  #logo-container img {
+    /* height: 100%;
+        width: auto; */
+    margin-top: 7px;
+    height: 40px;
+    width: 40px;
+  }
+  #right-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+  }
+  #right-btns #search {
+    padding: 16px 16px 20px;
+    margin-right: 10px;
+    height: 100%;
+  }
+  
+  #right-btns #getwordpress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    font-weight: bold;
+    background-color: #3858e9;
+    width: 145px;
+    height: 40px;
+    color: white;
+  }
+  
+  #right-btns #getwordpress:hover {
+    background-color: #213fd4;
+  }
+  
+  #arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("res/down-arrow-white.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  
+  /*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+  
+  /*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+  #mainbody{
+    width: 100%;
+    height: auto;
+  }
+
+  #mainheader{
+    width: 100%;
+    height: 60px;
+    background-color: #23282d;
+    color:white; 
+    display: flex;
+    align-items: center;
+  }
+
+  #wordpress{
+    margin-left: 784px;
+  }
+
+  #mainheader p{
+    margin-right: 30px;
+    font-size: 15px;
+  }
+
+  #mainheader p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #firstpart{
+    background-color: #23282d;
+    width: 100%;
+    height: 180px;
+    color: white;
+  }
+
+  #firstpart p{
+    margin-left: 100px;
+    padding-top: 62px;
+    font-size: 50px;
+    font-family: Garamond, "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  }
+
+  #secondpart{
+    background-color: #eff2ff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  #SPcontent{
+    margin-left: 578px;
+    font-size: 12px;
+  }
+
+  #SPlink{
+    text-decoration: underline;
+    color: #3858e9;
+    margin-left: 4px;
+    font-size: 12px;
+  }
+
+  #SPlink:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #thirdpart{
+    float: left;
+    width: 100%;
+    height: 80px;
+  }
+
+  #Searchbox{
+    width: 16%;
+    height: 37px;
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  #searchmainbox{
+  width: 86%;
+  height: 37px;
+  font-size: 14px;
+  margin-left: 4%;
+  text-decoration: none;
+  border: #eff2ff;
+  padding-left: 6px;
+  background-color: #f6f6f6;
+  }
+
+  #search2{
+  width: 14%;
+  height: 37px;
+  text-decoration: none;
+  border: none;
+  background-color: #f6f6f6;
+  }
+
+  #search2:hover{
+  cursor: pointer;
+  }
+
+  input[type=search] {
+    background-color: #ffffff;
+    border: 3px solid #3858e9;
+    padding-right: 4px;
+  }
+
+  input[type=search]:focus {
+    background-color: #ffffff;
+    border: 3px solid #3858e9;
+    font-size: 22px;
+  }
+
+  #btnsearch{
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+
+  #fourthpart, #fifthpart{
+    float: left;
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+
+  #firstbox, #secondbox, #thirdbox, #fourthbox{
+    border: 1px solid #ccd0d4;
+    width: 50%;
+    height: 100%;
+  }
+
+  #Ftitle1, #Ftitle2, #Ftitle3, #Ftitle4, #Ftitle9, #Ftitle10, #Ftitle11, #Ftitle12{
+    margin-left: 100px;
+  }
+
+  #Ftitle5, #Ftitle6, #Ftitle7, #Ftitle8, #Ftitle13, #Ftitle14, #Ftitle15, #Ftitle16{
+    margin-left: 80px;
+  }
+
+  #Ftitle1:hover, #Ftitle2:hover, #Ftitle3:hover, #Ftitle4:hover, #Ftitle5:hover, #Ftitle6:hover, #Ftitle7:hover, #Ftitle8:hover, 
+  #Ftitle9:hover, #Ftitle10:hover, #Ftitle11:hover, #Ftitle12:hover, #Ftitle13:hover, #Ftitle14:hover, #Ftitle15:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #Ftitle16:hover, #Ftitle17:hover, #Ftitle18:hover, #Ftitle19:hover, #Ftitle20:hover, #Ftitle21:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #Ftitle2, #Ftitle3, #Ftitle4, #Ftitle6, #Ftitle7, #Ftitle8, #Ftitle10, #Ftitle11, #Ftitle12, #Ftitle14, #Ftitle15{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    color: #3858e9;
+    margin-top: 20px;
+    line-height: 2.4;
+  }
+
+  #Ftitle16, #Ftitle17, #Ftitle18, #Ftitle19, #Ftitle20, #Ftitle21{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    color: #3858e9;
+    font-size: 17px;
+  }
+
+  #Ftitle1, #Ftitle5, #Ftitle9, #Ftitle13{
+    font-size: 48px;
+    font-family: Garamond, "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    margin-top: 120px;
+    line-height: 1.8;
+  }
+
+  #Ftitle1{
+    width: 51%;
+  }
+
+  #Ftitle2{
+    width: 14%;
+  }
+
+  #Ftitle3{
+    width: 6%;
+  }
+
+  #Ftitle4{
+    width: 17%;
+  }
+
+  #Ftitle5{
+    width: 41%;
+  }
+
+  #Ftitle6{
+    width: 10%;
+  }
+
+  #Ftitle7{
+    width: 12%;
+  }
+
+  #Ftitle8{
+    width: 8%;
+  }
+
+  #Ftitle9{
+    width: 37%;
+  }
+
+  #Ftitle10{
+    width: 11%;
+  }
+
+  #Ftitle11{
+    width: 10%;
+  }
+
+  #Ftitle12{
+    width: 6%;
+  }
+
+  #Ftitle13{
+    width: 36%;
+  }
+
+  #Ftitle14{
+    width: 12%;
+  }
+
+  #Ftitle15{
+    width: 15%;
+  }
+
+  #Ftitle16{
+    position: absolute;
+    margin-left: 0;
+  }
+
+  #Ftitle17{
+    position: absolute;
+    margin-left: 108px;
+  }
+
+  #Ftitle18{
+    position: absolute;
+    margin-left: 202px;
+  }
+
+  #Ftitle19{
+    position: absolute;
+    margin-left: 316px;
+  }
+
+  #Ftitle20{
+    position: absolute;
+    margin-left: 434px;
+  }
+
+  #Ftitle21{
+    position: absolute;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  #titlebox{
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-bottom: 10px;
+  }
+
+  #Ftitlecontent16{
+    width: 80%;
+    line-height: 1.8;
+  }
+
+  #Ftitlecontent1, #Ftitlecontent5, #Ftitlecontent9, #Ftitlecontent13{
+    color: #656a71;
+    font-size: 17px;
+  }
+
+  #Ftitlecontent2, #Ftitlecontent3, #Ftitlecontent4, #Ftitlecontent6, #Ftitlecontent7, #Ftitlecontent8, 
+  #Ftitlecontent10, #Ftitlecontent11, #Ftitlecontent12, #Ftitlecontent14, #Ftitlecontent15, #Ftitlecontent16{
+    color: #40464d;
+    font-size: 17px;
+  }
+
+  #Ftitlecontent5, #Ftitlecontent6, #Ftitlecontent7, #Ftitlecontent8, #Ftitlecontent13, #Ftitlecontent14, #Ftitlecontent15, 
+  #Ftitlecontent16{
+    margin-left: 80px;
+  }
+
+  #Ftitlecontent1, #Ftitlecontent2, #Ftitlecontent3, #Ftitlecontent4, #Ftitlecontent9, #Ftitlecontent10, #Ftitlecontent11, 
+  #Ftitlecontent12{
+    margin-left: 100px;
+  }
+
+  #lastpart{
+    float: left;
+    background-color: #23282d;
+    width: 100%;
+    height: 300px;
+    display: flex;
+  }
+
+  hr{
+    width: 80%;
+    margin-left: 40px;
+    border-top: 1px #ccc;
+  }
+
+  #lbox1{
+    width: 50%;
+    height: auto;
+    padding-top: 80px;
+  }
+
+  #lbox2{
+    width: 50%;
+    height: auto;
+    padding-top: 80px;
+  }
+
+  #ltitle1{
+    color: white;
+    font-size: 66px;
+    font-family: Garamond, "Baskerville", "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    margin-left: 80px;
+  }
+
+  #lcontent1{
+    color: white;
+    margin-left: 75px;
+    margin-top: 30px;
+  }
+
+  #lcontent2, #lcontent3{
+    color: white;
+    margin-left: 40px;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #lcontent2{
+    width: 54%;
+  }
+
+  #lcontent3{
+    width: 59%;
+  }
+
+  #lcontent2:hover, #lcontent3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+  }
+
+  /*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+  
+  /*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+  #footer {
+    float: left;
+    width: 100%;
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #23282d;
+    }
+    
+    #footer > div {
+    display: flex;
+    flex-direction: column;
+    }
+                                            
+    #footer > div > a {
+    color: white;
+    padding: 8px 0;
+    }
+                                            
+    #footer > div > a:hover {
+    text-decoration: underline;
+    }
+    
+    #footer-2 {
+    display: flex;
+    align-items: center;
+    }
+    
+    #logo-container-2 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+    }
+    
+    #footer-2 span{
+      color: #40464d;
+      letter-spacing: 4px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    #logo-container-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    }
+    
+    #wordpressorg a,
+    #wordpressorg span {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    }
+                                            
+    #footer-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    width: 100%;
+    color: white;
+    background-color: #23282d;
+    padding-bottom: 60px;
+    }
+    #social-logo-container {
+    display: flex;
+    margin-right: 20px;
+    }
+    
+    #social-logo-container > div {
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+    }              
+    
+    #social-logo-container > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+  /*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/
+  
