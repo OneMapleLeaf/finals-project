@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Themes.css">
+    <script defer src="Themes.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!------------------------------------------------------------- HEADER START ------------------------------------------------------------->
+    <div id="header">
+        <div id="logo-container">
+            <button onclick="openIndex()">
+                <img src="res/WordPress-logotype-wmark-white.png" alt="WordPress-logotype-wmark" />
+            </button>
+        </div>
+        <div id="nav">
+            <button onclick="openNews()">News</button>
+            <button onclick="openShowCase()">Showcase</button>
+            <button onclick="openHosting()">Hosting</button>
+            <div id="dropdown">
+                <button id="dropdown_btn">Extend<span id="arrow"></span></button>
+                <div id="dropdown-menu">
+                    <li><a href="#" style="text-decoration: underline; color: blue">Themes</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="plugins.html" >Patterns</a></li>
+                    <li><a href="#">Blocks</a></li>
+                </div>
+            </div>
+            <div id="dropdown">
+                <button id="dropdown_btn">Learn<span id="arrow"></span></button>
+                <div id="dropdown-menu">
+                    <li><a href="Learn.html">Learn WordPress</a></li>
+                    <li><a href="Document.html">Documentation</a></li>
+                    <li><a href="Forums.html">Forums</a></li>
+                    <li><a href="Developers.html">Developers</a></li>
+                </div>
+            </div>
+            <div id="dropdown">
+                <button id="dropdown_btn">Community<span id="arrow"></span></button>
+                <div id="dropdown-menu">
+                    <li><a href="MakeWordPress.html">Make WordPress</a></li>
+                    <li><a href="PhotoDirectory.html">Photo Directory</a></li>
+                    <li><a href="FiveForTheFuture.html">Five for the Future</a></li>
+                    <li><a href="#">Events</a></li>
+                </div>
+            </div>
+            <div id="dropdown">
+                <button id="dropdown_btn">About<span id="arrow"></span></button>
+                <div id="dropdown-menu">
+                    <li><a href="about.html">About WordPress</a></li>
+                    <li><a href="enterprise.html">Enterprise</a></li>
+                </div>
+            </div>
+        </div>
+        <div id="right-btns">
+            <button id="search">
+                <div style="height: 25px; width: 25px;"><img src="res/search.png" alt="search-logo"
+                        style="width: 100%; height: 100%; object-fit: fill;" /></div>
+            </button>
+            <button id="getwordpress">Get WordPress</button>
+        </div>
+    </div>
+    <!------------------------------------------------------------- HEADER END ------------------------------------------------------------->
+    <!------------------------------------------------------------- BODY START ------------------------------------------------------------->
+<div id="searchbar">
+<a href="">Themes</a>
+
+<div id="descinherit">
+    Add style to your WordPress site! Browse 12,258 free themes.
+</div>
+<input type="text" placeholder="Search Themes...">
+</div>
+
+<div id="commercialthemes">
+    <a href="">Commercial Themes</a>
+</div>
+
+<div id="tab">
+    <button id="tablink1" data-content="Popular" onclick="tabHosting(event)">Popular</button>
+    <button id="tablink2" data-content="Latest" onclick="tabHosting(event)">Latest</button>
+    <button id="tablink3" data-content="Commercial" onclick="tabHosting(event)">Commercial</button>
+    <button id="tablink4" data-content="Community" onclick="tabHosting(event)">Community</button>
+    <button id="tablink5" data-content="BlockThemes" onclick="tabHosting(event)">Block Themes</button>
+    <div id="Filter">
+        <a href=""> Feature Filter</a>
+    </div>
+</div>
+
+<div id="Popular" style="display:none;">
+   
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\box (1).jpg" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Astra </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\box (9).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Hello Elementor </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\box (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>Twenty Twenty-Four </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\box (4).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Kadence </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\box (5).png" alt="cats"></div>
+            <div id="sub-5"><p>OceanWp</p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\box (6).png" alt="cats"></div>
+            <div id="sub-6"><p>WPvice </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\box (7).png" alt="cats"></div>
+            <div id="sub-7"><p>Twenty Four</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\box (8).png" alt="cats"></div>
+            <div id="sub-8"><p>Twenty-Twenty </p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\box (9).png" alt="cats"></div>
+            <div id="sub-9"><p>Fifty-Fifty </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+
+  
+</div>
+
+<div id="Latest" style="display:none;">
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\screenshot.png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Savory </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\screenshot (1).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Pointy </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\screenshot (2).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>English Class </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\screenshot (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Authentic Bois </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\screenshot (4).png" alt="cats"></div>
+            <div id="sub-5"><p>Planner</p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\screenshot (5).png" alt="cats"></div>
+            <div id="sub-6"><p>Sten </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\screenshot (6).png" alt="cats"></div>
+            <div id="sub-7"><p>Poesis</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\screenshot (7).png" alt="cats"></div>
+            <div id="sub-8"><p>Soccer</p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\screenshot (8).png" alt="cats"></div>
+            <div id="sub-9"><p>Planner </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+</div>
+
+<div id="BlockThemes" style="display:none;">
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\box (1).jpg" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Twenty Twenty Four </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\box (2).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Hello Elementor </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\box (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>Twenty Twenty-Four </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\box (4).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Astro </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\box (5).png" alt="cats"></div>
+            <div id="sub-5"><p>Thirty-One </p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\box (6).png" alt="cats"></div>
+            <div id="sub-6"><p>WPvice </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\box (7).png" alt="cats"></div>
+            <div id="sub-7"><p>Twenty Four</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\box (8).png" alt="cats"></div>
+            <div id="sub-8"><p>Kadence </p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\box (9).png" alt="cats"></div>
+            <div id="sub-9"><p>Fifty-Fifty </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+
+  
+</div>
+
+<div id="Commercial" style="display:none;">
+   
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\box (1).jpg" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Astra </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\box (9).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Hello Elementor </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\box (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>Twenty Twenty-Four </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\box (4).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Kadence </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\box (5).png" alt="cats"></div>
+            <div id="sub-5"><p>OceanWp</p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\box (6).png" alt="cats"></div>
+            <div id="sub-6"><p>WPvice </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\box (7).png" alt="cats"></div>
+            <div id="sub-7"><p>Twenty Four</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\box (8).png" alt="cats"></div>
+            <div id="sub-8"><p>Twenty-Twenty </p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\box (9).png" alt="cats"></div>
+            <div id="sub-9"><p>Fifty-Fifty </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+
+  
+</div>
+
+</div>
+
+<div id="Community" style="display:none;">
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\screenshot.png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Savory </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\screenshot (1).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Pointy </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\screenshot (2).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>English Class </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\screenshot (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Authentic Bois </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\screenshot (4).png" alt="cats"></div>
+            <div id="sub-5"><p>Planner</p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\screenshot (5).png" alt="cats"></div>
+            <div id="sub-6"><p>Sten </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\screenshot (6).png" alt="cats"></div>
+            <div id="sub-7"><p>Poesis</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\screenshot (7).png" alt="cats"></div>
+            <div id="sub-8"><p>Soccer</p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\screenshot (8).png" alt="cats"></div>
+            <div id="sub-9"><p>Planner </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+</div>
+
+<div id="BlockThemes" style="display:none;">
+    <div id="boxbox-1">
+        <div id="box1">
+            <div id="image-1">
+                <img src="pictures\box (1).jpg" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-1">
+                <p>Twenty Twenty Four </p> <!--copy-->
+            </div>
+        </div>
+        <div id="box2">
+            <div id="image-2">
+                <img src="pictures\box (2).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-2"><p>Hello Elementor </p></div>
+        </div>
+        <div id="box3">
+            <div id="image-3">
+                <img src="pictures\box (3).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-3"><p>Twenty Twenty-Four </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-2">
+        <div id="box4">
+            <div id="image-4"> 
+                <img src="pictures\box (4).png" alt="cats"> <!--copy-->
+            </div>
+            <div id="sub-4"><p>Astro </p></div>
+        </div>
+        <div id="box5">
+            <div id="image-5"><img src="pictures\box (5).png" alt="cats"></div>
+            <div id="sub-5"><p>Thirty-One </p></div>
+        </div>
+        <div id="box6">
+            <div id="image-6"><img src="pictures\box (6).png" alt="cats"></div>
+            <div id="sub-6"><p>WPvice </p></div>
+        </div>
+    </div>
+
+
+    <div id="boxbox-3">
+        <div id="box7">
+            <div id="image-7"><img src="pictures\box (7).png" alt="cats"></div>
+            <div id="sub-7"><p>Twenty Four</p></div>
+        </div>
+        <div id="box8">
+            <div id="image-8"><img src="pictures\box (8).png" alt="cats"></div>
+            <div id="sub-8"><p>Kadence </p></div>
+        </div>
+        <div id="box9">
+            <div id="image-9"><img src="pictures\box (9).png" alt="cats"></div>
+            <div id="sub-9"><p>Fifty-Fifty </p></div>
+        </div>
+         <div id="loadmr">
+            <button>Load more themes</button>
+        </div>
+    </div>
+
+  
+</div>
+
+<div id="about">
+    <div id="bout1">
+        <h3>Add Your Theme</h3>
+        <p>The WordPress theme directory is used by millions of WordPress users all over the world. <a href="">Submit your theme</a> to the official WordPress.org theme repository.</p>
+    </div>
+    <div id="bout2">
+        <h3>Create a Theme</h3>
+        <p>Want to learn how to build a great theme? Read the <a href="">Theme Developer Handbook</a> to learn everything about WordPress theme development.</p>
+    </div>
+    <div id="bout3">
+        <h3>Stay Up-to-Date</h3>
+        <p>Trying to ensure a great experience for the theme authors and users, means that theme requirements change from time to time. Keep up with the latest changes by following the <a href="">Themes Team blog.</a> </p>
+    </div>
+</div>
+   
+
+    <!------------------------------------------------------------- BODY END ------------------------------------------------------------->
+
+    <!------------------------------------------------------------- FOOTER START ------------------------------------------------------------->
+    <div id="footer">
+        <div id="col1">
+            <a href="#">About</a>
+            <a href="#">News</a>
+            <a href="#">Hosting</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div id="col2">
+            <a href="">Showcase</a>
+            <a href="">Themes</a>
+            <a href="">Plugins</a>
+            <a href="">Patterns</a>
+        </div>
+        <div id="col3">
+            <a href="">Learn</a>
+            <a href="">Documentation</a>
+            <a href="">Developers</a>
+            <a href="">WordPress.tv ↗</a>
+        </div>
+        <div id="col4">
+            <a href="">Get Involved</a>
+            <a href="">Events</a>
+            <a href="">Donate ↗</a>
+            <a href="">Swag Store ↗</a>
+        </div>
+    </div>
+    <div id="footer-2">
+        <div style="display: flex; align-items: center">
+            <div id="logo-container-2">
+                <a href="#"><img src="res/WordPress-logotype-wmark-white.png" alt="wordpress-logo" /></a>
+            </div>
+            <a href="" id="wordpressorg"><span style="font-weight: bold"><span style="font-size: 20px">W</span>ORD<span
+                        style="font-size: 20px">P</span>RESS</span><span>.ORG</span></a>
+        </div>
+        <span style="font-family: 'Times New Roman', Times, serif">CODE IS POETRY</span>
+        <div id="social-logo-container">
+            <div><a href="https://www.facebook.com/WordPress/"><img src="res/fb-icon.png" alt="fb-icon" /></a></div>
+            <div><a href="https://twitter.com/WordPress"><img src="res/x-logo.png" alt="x-logo" /></a></div>
+            <div><a href=""><a href="https://www.instagram.com/wordpress/"><img src="res/instagram-logo.png"
+                            alt="ig-logo" /></a></div>
+            <div><a href="https://www.linkedin.com/company/wordpress"><img src="res/In-White-72.png" alt="" /></a></div>
+            <div><a href="https://www.youtube.com/wordpress"><img src="res/yt-logov2.png" alt="" ; /></a></div>
+        </div>
+    </div>
+    <!------------------------------------------------------------- FOOTER END ------------------------------------------------------------->
+
+</body>
+
+</html>

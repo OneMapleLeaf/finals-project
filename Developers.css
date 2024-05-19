@@ -27,11 +27,6 @@
       color: white;
       background-color: #23282d;
     }
-    #devs{
-      color: #7b90ff;
-      margin: 0;
-    }
-    
     #devs:hover{
       color: #7b90ff;
       text-decoration: underline;
