@@ -588,6 +588,11 @@ a {
   line-height: 50px;
 }
 
+#aboutlastcont a:hover{
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
 #aboutlastcont #leftyyy p{
   border-bottom: 1px solid black;
 }

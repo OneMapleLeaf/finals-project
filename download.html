@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="index.js"></script>
-    <link rel="stylesheet" href="download.css">
-
+    <link rel="stylesheet" href="download.css" />
     <title>Document</title>
   </head>
-  <div id="header">
+  <body>
+    <div id="header">
       <div id="logo-container">
         <button onclick="openIndex()">
           <img
@@ -70,108 +70,107 @@
         <button id="getwordpress">Get WordPress</button>
       </div>
     </div>
-<!-- HEADER END  -->
-
-<!-- BODY START  -->
-<div id="body-container">
-    <div id="get-wordpress-container">
+    <!-- BODY START -->
+    <div id="body-container">
+      <div id="get-wordpress-container">
         <h1>Get WordPress</h1>
         <p>Everything you need to set up your site just the way you want it.</p>
-    </div>
-    <div id="download-container">
+      </div>
+      <div id="download-container">
         <div id="download">
-            <h2>Download and install it yourself</h2>
-            <p>For anyone comfortable getting their own hosting and domain</p>
-            <div id="btn-containers">
-                <button>Download WordPress 6.5.3</button>
-                <button>Installation Guide</button>
-            </div>
-            <p>Recommend PHP 7.4 or greater and MySQL version 8.0 or MariaDB version 10.4 or greater.</p>
+          <h2>Download and install it yourself</h2>
+          <p>For anyone comfortable getting their own hosting and domain</p>
+          <div id="btn-containers">
+            <button id="dl-wp">Download WordPress 6.5.3</button>
+            <button id="install-guide">Installation Guide</button>
+          </div>
+          <p style="font-size:14px;">
+            Recommend PHP 7.4 or greater and MySQL version 8.0 or MariaDB
+            version 10.4 or greater.
+          </p>
         </div>
-        <div id="set-up"></div>
+        <div id="set-up">
+          <h2>Setup with a hosting provider</h2>
+          <p>For anyone looking for the simplest way to start</p>
+          <button>See all recommended hosts</button>
+        </div>
+      </div>
     </div>
-</div>
-
-
-
-
-<!-- BODY END  -->
-
-<!-- FOOTER START  -->
+    <!-- BODY END  --> 
     <div id="footer">
-        <div id="col1">
-          <a href="about.html">About</a>
-          <a href="news.html">News</a>
-          <a href="hosting.html">Hosting</a>
-          <a href="#">Privacy</a>
-        </div>
-        <div id="col2">
-          <a href="showcase.html">Showcase</a>
-          <a href="#">Themes</a>
-          <a href="#">Plugins</a>
-          <a href="#">Patterns</a>
-        </div>
-        <div id="col3">
-          <a href="#">Learn</a>
-          <a href="#">Documentation</a>
-          <a href="#">Developers</a>
-          <a href="#">WordPress.tv ↗</a>
-        </div>
-        <div id="col4">
-          <a href="#">Get Involved</a>
-          <a href="#">Events</a>
-          <a href="#">Donate ↗</a>
-          <a href="#">Swag Store ↗</a>
-        </div>
+      <div id="col1">
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="hosting.html">Hosting</a>
+        <a href="#">Privacy</a>
       </div>
-      <div id="footer-2">
-        <div style="display: flex; align-items: center">
-          <div id="logo-container-2">
-            <a href="#"
-              ><img
-                src="res/WordPress-logotype-wmark-white.png"
-                alt="wordpress-logo"
-            /></a>
-          </div>
-          <a href="index.html" id="wordpressorg"
-            ><span style="font-weight: bold"
-              ><span style="font-size: 20px">W</span>ORD<span
-                style="font-size: 20px"
-                >P</span
-              >RESS</span
-            ><span>.ORG</span></a
-          >
+      <div id="col2">
+        <a href="showcase.html">Showcase</a>
+        <a href="#">Themes</a>
+        <a href="#">Plugins</a>
+        <a href="#">Patterns</a>
+      </div>
+      <div id="col3">
+        <a href="#">Learn</a>
+        <a href="#">Documentation</a>
+        <a href="#">Developers</a>
+        <a href="#">WordPress.tv ↗</a>
+      </div>
+      <div id="col4">
+        <a href="#">Get Involved</a>
+        <a href="#">Events</a>
+        <a href="#">Donate ↗</a>
+        <a href="#">Swag Store ↗</a>
+      </div>
+    </div>
+    <div id="footer-2">
+      <div style="display: flex; align-items: center">
+        <div id="logo-container-2">
+          <a href="#"
+            ><img
+              src="res/WordPress-logotype-wmark-white.png"
+              alt="wordpress-logo"
+          /></a>
         </div>
-        <span style="font-family: 'Times New Roman', Times, serif"
-          >CODE IS POETRY</span
+        <a href="index.html" id="wordpressorg"
+          ><span style="font-weight: bold"
+            ><span style="font-size: 20px">W</span>ORD<span
+              style="font-size: 20px"
+              >P</span
+            >RESS</span
+          ><span>.ORG</span></a
         >
-        <div id="social-logo-container">
-          <div>
-            <a href="https://www.facebook.com/WordPress/"
-              ><img src="res/fb-icon.png" alt="fb-icon"
-            /></a>
-          </div>
-          <div>
-            <a href="https://twitter.com/WordPress"
-              ><img src="res/x-logo.png" alt="x-logo"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/wordpress/"
-              ><img src="res/instagram-logo.png" alt="ig-logo"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/company/wordpress"
-              ><img src="res/In-White-72.png" alt=""
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.youtube.com/wordpress"
-              ><img src="res/yt-logov2.png" alt="" ;
-            /></a>
-          </div>
+      </div>
+      <span style="font-family: 'Times New Roman', Times, serif"
+        >CODE IS POETRY</span
+      >
+      <div id="social-logo-container">
+        <div>
+          <a href="https://www.facebook.com/WordPress/"
+            ><img src="res/fb-icon.png" alt="fb-icon"
+          /></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/WordPress"
+            ><img src="res/x-logo.png" alt="x-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/wordpress/"
+            ><img src="res/instagram-logo.png" alt="ig-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/company/wordpress"
+            ><img src="res/In-White-72.png" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/wordpress"
+            ><img src="res/yt-logov2.png" alt="" ;
+          /></a>
         </div>
       </div>
+    </div>
   </body>
 </html>

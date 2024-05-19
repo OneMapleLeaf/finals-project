@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+}
+#dropdown {
+  position: relative;
+  z-index: 1001;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+#arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+#fav{
+  border-top: 1px solid lightgray;
+  text-align: right;
+  background-color: #23282d;
+  font-weight: 100;
+  font-size: 15px;
+  width: 100%;
+  padding-top: 1%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  align-items: center;  
+  flex-wrap: nowrap;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  
+  
+}
+#fav a{
+  line-height: 1.5;
+  margin-right: 2%;
+  color: white;
+}
+#fav a:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#titlepart {
+  display: flex;
+  align-items:baseline;
+  margin-bottom: 0%;
+  background-color: #23282d;
+  color: white;
+  width: 100%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  padding-left: 17%;
+  
+}
+#titlepart p{
+  
+  font-size: 18px;
+  font-weight: lighter;
+}
+#titlepart h3{ 
+  font-size: 35px;
+  font-weight: lighter;
+  color: white;
+  padding-right: 2%;
+}
+
+
+#tab{
+  width: 75%;
+  padding: 3%;
+  padding-left: 0%;
+  margin-left: 5%;
+  border: none;
+  display: inline-flex;
+  }
+  
+  #tab input[type="radio"] {
+    display: none;
+  }
+  
+  #tab label {
+    padding: 10px;
+    margin: 5px;
+    margin-right: 0%;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #tab input[type="radio"]:checked + label {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  #searchbar input{
+    box-shadow:none ;
+    display: flex;
+    padding:  6px;
+    border: none;
+    margin: auto;
+    
+    width: 25%;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(228, 226, 226);
+    border-radius: 10px;
+  }
+  #searchbar{
+    width: 100%;
+    border: none;
+    font-weight: 100;
+    color:whitesmoke;
+    padding-bottom: 0%;
+  }
+  
+
+#black-plug,
+#featured-plug,
+#Popular-plug{
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 75vw;
+  margin: auto;
+}
+
+#plug-1,
+#plug-3,
+#plug-4{
+  height: 100%;
+  width: 50%;
+  padding: 23px 0px;
+}
+
+#plug-2{
+  height: 100%;
+  width: 50%;
+  padding: 23px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#plug-2 a{
+  text-decoration: underline;
+  color: blue;
+}
+
+#bottle{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 40vh;
+  width: 75vw;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+#bottle1, #bottle2{
+  border: 1px solid darkgray;
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#cork1, #corkContainer1{
+  height: 40%;
+  width: 100%;
+  display: flex;
+}
+#cupimge, #cupImageContainer{
+  height: 100%;
+  width: 25%;
+  display: flex;
+}
+#cupimge img,
+#cupImageContainer img{
+  height: 75px;
+  width: 75px;
+  margin: auto;
+}
+#cuptxt, #cupTextContainer{
+padding: 20px 10px;
+font-size: 18px;
+height: 100%;
+width: 75vh;
+} 
+
+#cuptxt a,
+#cupTextContainer a{
+  margin-top: 10px;
+  font-size: 19px;
+  /* font-weight: 500; */
+  color:#6f21d4;
+  }
+
+#cork2, #corkContainer2{
+  height: 30%;
+  width: 100%;
+ padding-left: 2%;
+ margin-bottom: 15px ;
+}
+
+#cork2 p, 
+#corkContainer2 p{
+  margin-top: 10px;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 15px ;
+  padding: 0px 10px;
+}
+
+#cork3, #corkContainer3{
+  margin-top: 10px;
+  height: 20%;
+  width: 100%;
+  color: darkgray;
+  display: flex;
+  padding: 0px 20px;
+}
+
+#decanter1, #decanterContainer1{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#decanter1 p,
+#decanter2 p,
+#decanterContainer1 p,
+#decanterContainer2 p{
+  font-size: 15px;
+}
+
+#decant-icon-1,
+#decant-icon-1-2,
+#decant-icon-1-3,
+#decanterIcon1,
+#decanterIcon2,
+#decanterIcon3
+{
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 5px;
+  
+}
+
+
+#decant-icon-1 img,
+#decanterIcon1 img{
+  margin-top: 8px;
+  height: 18px;
+  width: 22px;
+}
+
+#decant-icon-1-2 img,
+#decant-icon-1-3 img,
+#decanterIcon2 img,
+#decanterIcon3 img{
+  height: 18px;
+  width: 20px;
+}
+
+
+#decanter2,
+#decanterContainer2{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+
+#col_cont{
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  width: 75vw;
+  margin:auto;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+#col1-1,
+#col2-1,
+#col3-1{
+  width: 33%;
+  height: 100%;
+  padding-right: 25px;
+}
+
+#row1-1 p,
+#row2-1 p,
+#row3-1 p{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#row1-2 p,
+#row2-2 p,
+#row3-2 p{
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/

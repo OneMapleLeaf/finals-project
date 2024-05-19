@@ -1,0 +1,756 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*----------------------------------------------------------------- HEADER START -----------------------------------------------------------------*/
+#header {
+  background-color: #23282d;
+
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#nav {
+  color: white;
+  background-color: #23282d;
+  z-index: 1;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #1c2024;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: #23282d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #1c2024;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #1c2024;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
+      width: auto; */
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
+
+#arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("res/down-arrow-white.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+/*----------------------------------------------------------------- HEADER END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- BODY START -----------------------------------------------------------------*/
+
+/*First content start*/
+#firstblock{
+  float: left;
+  width: 100%;
+  background-color:#23282d;
+  color: white;
+  height: 420px;
+}
+
+#blockleftfirst{
+  float: left;
+  width: 40%;
+  position: relative;
+  top: 170px;
+  left: 180px;
+  line-height:70px;
+
+}
+
+#blockleftfirst h1{
+  font-family: serif;
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+#blockrightfirst{
+  width: 60%;
+  float: left;
+}
+
+#blockrightfirst img{
+  height: 400px;
+  position: relative;
+  top: 20px;
+  left: 80px;
+}
+/*First content end*/
+
+/*Second content start*/
+
+#secondblock{
+  float: left;
+  width: 100%;
+  background-color: #1E1E1E;
+  color: white;
+  height: 480px;
+}
+
+#blocksecond h1{
+  font-size: 45px;
+  font-weight: lighter;
+  font-family: serif;
+  position: relative;
+
+}
+
+#blocksecond{
+  position: relative;
+  top: 55px;
+  width: 80%;
+  float: left;
+  left: 180px;
+}
+
+#blocksecond #seccont{
+  position: relative;
+  top: 60px;
+  line-height: 30px;
+}
+
+#createb button{
+  position: relative;
+  top: 120px;
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color: #1E1E1E;
+  border: 1px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+#browseb button{
+  position:relative;
+  top: 58.5px;
+  left: 200px;
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color: #1E1E1E;
+  border: 1px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+#blocksecond button:hover{
+  border: 1px solid #3858e9;
+  cursor: pointer;
+  color: #3858e9;
+}
+
+/*Second content end*/
+
+/*Third content start*/
+  #thirdblock{
+    float: left;
+    width: 100%;
+    background-color:#1E1E1E;
+    color: white;
+    justify-content: space-evenly;
+  }
+
+  #thirdblock img{
+    height: 25px;
+    position: relative;
+    left: 170px;
+    top: 55px;
+
+  }
+  #thirdblock p{
+    font-size: 12px;
+  }
+
+  #par{
+    float: left;
+    width: 25%;
+    border: 0.5px solid gray;
+    border-left: none;
+    height: 180px;
+  }
+
+  #par p{
+    position: relative;
+    top: 70px;
+    left: 155px;
+  }
+
+  #heading{
+    float: left;
+    width: 25%;
+    border: 0.5px solid gray;
+    height: 180px;
+    border-left: none;
+
+  }
+
+  #heading p{
+    position: relative;
+    top: 70px;
+    left: 161px;
+  }
+
+  #media{
+    float: left;
+    width: 25%;
+    border: 0.5px solid gray;
+    height: 180px;
+    border-left: none;
+
+  }
+
+  #media p{
+    position: relative;
+    top: 70px;
+    left: 167px;
+  }
+
+  #imag{
+    float: left;
+    width: 25%;
+    border: 0.5px solid gray;
+    border-right: none;
+    height: 180px;
+    border-left: none;
+
+  }
+
+  #imag img{
+    top: 60px;
+    left: 137px;
+    position: relative;
+  }
+
+  #imag p{
+    position: relative;
+    top: 100px;
+    left: 166.5px;
+    float: left ;
+  }
+
+
+  #thirdblockdin{
+    background-color: #1E1E1E;
+    color: white;
+    float: left;
+    width: 100%;
+  }
+
+  #thirdblockdin #secondcol{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  #secondcol > div{
+    font-size: 12px;
+  }
+
+  #secondcol > div{
+    border: 0.5px solid gray;
+    width: 25%;
+    height: 180px;
+    border-left: none;
+    border-top: none;
+  }
+
+  #secondcol > div > img{
+    height: 25px;
+    position: relative;
+    top: 60px;
+  }
+
+  #secondcol > div > p{
+    position: relative;
+    top: 76px;
+  }
+/*Third content end*/
+
+/*Fourth content start*/
+
+#fourthblock{
+  float: left;
+  width: 100%;
+  background-color: #1E1E1E;
+  color: white;
+  height: 500px;
+}
+
+#fourthblock #blockfourth h1{
+  font-size: 45px;
+  font-weight: lighter;
+  font-family: serif;
+  position: relative;
+}
+
+#blockfourth{
+  position: relative;
+  top: 90px;
+  left: 180px;
+  float: left;
+}
+
+#blockfourth p{
+  position: relative;
+  top: 60px;
+  line-height: 30px;
+}
+
+#blockfourth #fourthbutton button{
+  position:relative;
+  top: 110px;
+  left: 0px;
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color: #3858e9;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+#fourthbutton button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/*Fourth content end*/
+
+/*Fifth content start*/
+
+
+#fifthblock{
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+#fifthblock img{
+  float: left;
+  height: 532px;
+}
+
+/*Fifth content end*/
+
+/*sixth content start*/
+
+#sixthblock{
+  float: left;
+  width: 100%;
+  background-color:#23282d;
+  color: white;
+  height: 430px;
+}
+
+#sixthblock h1{
+  font-family: serif;
+  font-size: 35px;
+  font-weight: lighter;
+  position: relative;
+  top: 80px;
+  left: 180px;
+  float: left;
+}
+
+#lamansixth{
+  position: relative;
+  top: 165px;
+  right: 180px;
+  float: left;
+  line-height: 30px;
+}
+
+#sixthbutton{
+  float: left;
+  position: relative;
+  top:300px;
+  right: 680px;
+}
+
+#sixthbutton button{
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color:#23282d;
+  border: 1px solid white;  
+  font-weight: bold;
+  color: white;
+}
+
+#sixthbutton button:hover{
+  border-color:  #3858e9;
+  cursor: pointer;
+  color: #3858e9;;
+}
+
+/*sixth content end*/
+
+/*seventh content start*/
+#seventhblock{
+  float: left;
+  width: 100%;
+  height: 350px;
+  background-color:#23282d;
+  color: white;
+}
+
+#sevenleft{
+  float: left;
+  width: 50%;
+}
+
+#sevenright{
+  float: left;
+  width: 50%;
+  position: relative;
+
+}
+
+#sevenleft img{
+  height: 280px;
+  position: relative;
+  left: 180px;
+}
+
+#sevenright h1{
+  font-family: serif;
+  font-weight: lighter;
+  font-size: 35px;
+  position: relative;
+  top: 10px;
+}
+
+#rightlaman p{
+  line-height: 25px;
+  position: relative;
+  top: 50px;
+}
+
+#seventhbutton button{
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color:#23282d;
+  border: 1px solid white;  
+  font-weight: bold;
+  color: white;
+}
+
+#seventhbutton{
+  float: left;
+  position: relative;
+  top: 100px;
+}
+
+#seventhbutton button:hover{
+  cursor: pointer;
+  color: #3858e9;
+  border-color: #3858e9;
+}
+
+/*seventh content end*/
+
+/*eigth content start*/
+
+
+#eightblock{
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 550px;
+  background-color: #F6F6F6;
+}
+
+#eightleft{
+  float: left;
+  width: 50%;
+}
+
+#eightright{
+  float: left;
+  width: 50%;
+}
+
+#eightright img{
+  height: 400px;
+  box-shadow: #1c2024;
+  border: 1px solid lightgray;
+  position: relative;
+  left: 20px;
+  top: 75px;
+}
+
+#pamagateight h1{
+  font-family: serif;
+  font-weight: lighter;
+}
+
+#lamaneight p{
+  position: relative;
+  top: 180px;
+  line-height: 26px;
+  left: 180px;
+}
+
+#eightbutton button{
+  padding: 20px 35px 20px 35px;
+  font-size: 17px;
+  background-color:#3858e9;
+  border: 1px solid white;  
+  font-weight: bold;
+  color: white;
+}
+
+#eightbutton{
+  position: relative;
+  top: 230px;
+  left: 180px;
+}
+
+#eightbutton button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#eightleft > #pamagateight{
+  position: relative;
+  left: 180px;
+  top: 140px;
+}
+
+
+
+/*eigth content end*/
+
+#nineblock{
+  float: left;
+  width: 100%;
+}
+
+#nineblock img{
+  height: 170px;
+}
+
+#tenblock{
+  float: left;
+  width: 100%;
+  height: 600px;
+}
+
+#tenblock #contngten{
+  position: relative;
+  left: 180px;
+  float: left;
+  top: 20px;
+}
+
+#contngten #begin h1{
+  font-family: serif;
+  font-weight: lighter;
+  font-size: 34px;
+}
+
+#contngten #tenlaman p{
+  line-height: 28px;
+  position: relative;
+  float: left;
+  top: 50px;
+}
+
+#contngten #linkblocks{
+  position: relative;
+  float: left;
+  top: 90px;
+}
+
+#linkblocks a{
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #3858e9;
+  text-decoration-thickness: 0.5px;
+}
+
+#linkblocks a:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------- BODY END -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------- FOOTER START -----------------------------------------------------------------*/
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+  float: left;
+  width: 100%;
+  z-index: 1;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*----------------------------------------------------------------- FOOTER END -----------------------------------------------------------------*/

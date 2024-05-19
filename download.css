@@ -1,257 +1,330 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  li,
-  a {
-    color: black;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  #header {
-    border-bottom: 1px solid #d9d9d9;
-    height: 60px;
-    display: flex;
-    font-size: 14px;
-  }
-  #dropdown {
-    position: relative;
-  }
-  #dropdown-menu {
-    background-color: #f6f6f6;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 200%;
-    padding: 16px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    pointer-events: none;
-  }
-  #search-box {
-    display: none;
-  }
-  #search > div {
-    pointer-events: none;
-  }
-  #right-btns input[type="text"] {
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 8px;
-    padding: 0 8px;
-  }
-  
-  #dropdown-menu li {
-    padding: 16px 0;
-    font-size: 16px;
-  }
-  #dropdown-menu a {
-    display: block;
-    width: 100%;
-  }
-  #dropdown-menu a:hover {
-    text-decoration: underline;
-  }
-  #dropdown.active > #dropdown_btn + #dropdown-menu {
-    opacity: 1;
-    transition: opacity 0.5s;
-    transform: translateY(0px);
-    pointer-events: auto;
-  }
-  #dropdown_btn span {
-    pointer-events: none;
-  }
-  #header button {
-    background-color: white;
-    color: black;
-    border: none;
-    cursor: pointer;
-  }
-  #dropdown.active button {
-    background-color: #f6f6f6;
-    transition: background-color 150ms ease-in-out;
-    text-decoration: underline;
-  }
-  #header button:hover,
-  #dropdown:hover button {
-    background-color: #f6f6f6;
-  }
-  #nav {
-    display: flex;
-  }
-  
-  #logo-container {
-    display: flex;
-    justify-content: center;
-  }
-  #nav button {
-    height: 100%;
-    width: 108px;
-    padding: 18px 10px 14px;
-  }
-  #logo-container button {
-    /* padding: 16px 20px; */
-  
-    width: 69px;
-    height: 59px;
-  }
-  
-  #logo-container img {
-    /* height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li,
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+#header {
+  border-bottom: 1px solid #d9d9d9;
+  height: 60px;
+  display: flex;
+  font-size: 14px;
+}
+#dropdown {
+  position: relative;
+}
+#dropdown-menu {
+  background-color: #f6f6f6;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200%;
+  padding: 16px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
+#search-box {
+  display: none;
+}
+#search > div {
+  pointer-events: none;
+}
+#right-btns input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 0 8px;
+}
+
+#dropdown-menu li {
+  padding: 16px 0;
+  font-size: 16px;
+}
+#dropdown-menu a {
+  display: block;
+  width: 100%;
+}
+#dropdown-menu a:hover {
+  text-decoration: underline;
+}
+#dropdown.active > #dropdown_btn + #dropdown-menu {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#dropdown_btn span {
+  pointer-events: none;
+}
+#header button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+#dropdown.active button {
+  background-color: #f6f6f6;
+  transition: background-color 150ms ease-in-out;
+  text-decoration: underline;
+}
+#header button:hover,
+#dropdown:hover button {
+  background-color: #f6f6f6;
+}
+#nav {
+  display: flex;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+#nav button {
+  height: 100%;
+  width: 108px;
+  padding: 18px 10px 14px;
+}
+#logo-container button {
+  /* padding: 16px 20px; */
+
+  width: 69px;
+  height: 59px;
+}
+
+#logo-container img {
+  /* height: 100%;
       width: auto; */
-    margin-top: 7px;
-    height: 40px;
-    width: 40px;
-  }
-  #right-btns {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding-right: 20px;
-  }
-  #right-btns #search {
-    padding: 16px 16px 20px;
-    margin-right: 10px;
-    height: 100%;
-  }
-  
-  #right-btns #getwordpress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 20px;
-    font-weight: bold;
-    background-color: #3858e9;
-    width: 145px;
-    height: 40px;
-    color: white;
-  }
-  
-  #right-btns #getwordpress:hover {
-    background-color: #213fd4;
-  }
+  margin-top: 7px;
+  height: 40px;
+  width: 40px;
+}
+#right-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+#right-btns #search {
+  padding: 16px 16px 20px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+#right-btns #getwordpress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 145px;
+  height: 40px;
+  color: white;
+}
+
+#right-btns #getwordpress:hover {
+  background-color: #213fd4;
+}
 /* HEADER END  */
 
 /* BODY START  */
-#get-wordpress-container{
-    padding: 12px;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#get-wordpress-container {
+  padding: 12px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 44px 0;
 }
 
 #get-wordpress-container h1 {
-    font-size: 4rem;
-    font-weight: 100;
-    margin-bottom: 16px;
-    font-family: serif;
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 16px;
+  font-family: serif;
 }
-
+#download-container {
+  border: 1px solid #d9d9d9;
+}
 #get-wordpress-container p {
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-bottom: 16px;
-    font-family: serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 16px;
+  font-family: serif;
 }
 
+#download-container {
+  display: flex;
+  padding: 0 10%;
+}
 
+#download {
+  font-size: 1.1rem;
+  padding: 64px;
+  width: 50%;
+}
+#set-up {
+  font-size: 1.1rem;
+  padding: 64px;
+  width: 50%;
+}
 
+#download h2,
+#set-up h2 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin-bottom: 16px;
+  font-family: serif;
+}
 
+#btn-containers {
+  padding: 24px 0;
+  display: flex;
+}
 
+#btn-containers #dl-wp {
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 65%;
+  height: 60px;
+  color: white;
+}
 
+#btn-containers #install-guide {
+  margin-left: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #3858e9;
+  background-color: transparent;
+  border: 1px solid #3858e9;
+  width: 35%;
+}
 
+#btn-containers #dl-wp:hover {
+  background-color: #213fd4;
+}
+#btn-containers #install-guide:hover {
+  background-color: #3858e9;
+  color: white;
+}
 
+#set-up {
+  font-size: 1.1rem;
+  padding: 64px;
+  width: 50%;
+  border-left: 1px solid #d9d9d9;
+}
+#set-up button {
+  margin: 24px 0;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  background-color: #3858e9;
+  width: 65%;
+  height: 60px;
+  color: white;
+}
+#set-up button:hover{
+  background-color: #213fd4;
 
-
-
+}
 /* BODY END  */
 
 /* FOOTER START */
-  #footer {
-    padding: 64px 0;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #23282d;
-  }
-  #footer > div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #footer > div > a {
-    color: white;
-    padding: 8px 0;
-  }
-  
-  #footer > div > a:hover {
-    text-decoration: underline;
-  }
-  #footer-2 {
-    display: flex;
-    align-items: center;
-  }
-  #logo-container-2 {
-    display: flex;
-    height: 40px;
-    width: 40px;
-  }
-  #logo-container-2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-  }
-  #wordpressorg a,
-  #wordpressorg span {
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 16px;
-  }
-  
-  #footer-2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    color: white;
-    background-color: #23282d;
-  }
-  #social-logo-container {
-    display: flex;
-  }
-  #social-logo-container > div {
-    width: 25px;
-    height: 25px;
-    margin-right: 16px;
-  }
-  
-  #social-logo-container > div img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  #down-arrow {
-    pointer-events: none;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-left: 5px;
-    margin-bottom: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  
-  /* #arrow {
+#footer {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #23282d;
+}
+#footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer > div > a {
+  color: white;
+  padding: 8px 0;
+}
+
+#footer > div > a:hover {
+  text-decoration: underline;
+}
+#footer-2 {
+  display: flex;
+  align-items: center;
+}
+#logo-container-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+#logo-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#wordpressorg a,
+#wordpressorg span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  background-color: #23282d;
+}
+#social-logo-container {
+  display: flex;
+}
+#social-logo-container > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 16px;
+}
+
+#social-logo-container > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#down-arrow {
+  pointer-events: none;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* #arrow {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -259,4 +332,3 @@
     background-size: contain;
     vertical-align: middle;
   } */
-  
