@@ -1,6 +1,9 @@
 const openIndex = () => {
   window.location.href = "index.html";
 };
+const openDownload = () => {
+  window.location.href = "download.html";
+};
 const openHosting = () => {
   window.location.href = "hosting.html";
 };

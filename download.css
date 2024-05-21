@@ -247,6 +247,65 @@ button {
   background-color: #213fd4;
 
 }
+
+#try-wp-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+#desc-container{
+  display: flex;
+  padding: 24px 0;
+  background-color: #EFF2FF;
+  height: 55vh;
+}
+#desc-1 {
+  
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+#desc-1 * {
+  font-size: 3.5rem;
+}
+
+#desc-1-cont {
+  font-weight: 100;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+#desc-1-cont:hover{
+  cursor: pointer;
+}
+#desc-1-cont div {
+  border-bottom: 2px solid #C7D1FF;
+}
+#desc-2 {
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 24px 24px;
+}
+#desc-2 div {
+  width: 70%;
+}
+#desc-2 > div > h1 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  margin-bottom: 16px;
+  font-family: serif;
+
+}
+#desc-2 > div > p {
+  line-height: 24px;
+}
 /* BODY END  */
 
 /* FOOTER START */

@@ -30,7 +30,9 @@ function toggleStickyNavbar() {
 }
 
 
-
+const openDownload = () => {
+  window.location.href = "download.html";
+};
 
 //Button Click Redirection
 const openIndex = () => {

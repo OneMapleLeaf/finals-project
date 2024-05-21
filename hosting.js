@@ -5,7 +5,9 @@
     alt="WordPress-logotype-wmark"
   />
 </button>; */
-
+const openDownload = () => {
+  window.location.href = "download.html";
+};
 //Button Click Redirection
 const openIndex = () => {
   window.location.href = "index.html";
@@ -71,43 +73,43 @@ const openAboutWordPress = () => {
 const openEnterprise = () => {
   window.location.href = "enterprise.html";
 };
-  
-  // Dropdown Function
-  document.addEventListener("click", (e) => {
-    const isDropdownButton = e.target.matches("#dropdown_btn");
-    // console.log('Clicked element: ', e.target);
-    // console.log('Is dropdown button: ', isDropdownButton);
-    if (!isDropdownButton && e.target.closest("#dropdown") != null) return;
-  
-    let curDropDown;
-    if (isDropdownButton) {
-      curDropDown = e.target.closest("#dropdown");
-      curDropDown.classList.toggle("active");
-      // console.log('Current dropdown: ', curDropDown);
+
+// Dropdown Function
+document.addEventListener("click", (e) => {
+  const isDropdownButton = e.target.matches("#dropdown_btn");
+  // console.log('Clicked element: ', e.target);
+  // console.log('Is dropdown button: ', isDropdownButton);
+  if (!isDropdownButton && e.target.closest("#dropdown") != null) return;
+
+  let curDropDown;
+  if (isDropdownButton) {
+    curDropDown = e.target.closest("#dropdown");
+    curDropDown.classList.toggle("active");
+    // console.log('Current dropdown: ', curDropDown);
+  }
+
+  document.querySelectorAll("#dropdown.active").forEach((dropdown) => {
+    if (dropdown === curDropDown) return;
+    dropdown.classList.remove("active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.querySelector("#search");
+  const searchBox = document.querySelector("#search-box");
+
+  searchButton.addEventListener("click", () => {
+    if (searchBox.style.display !== "block") {
+      searchBox.style.display = "block";
+      searchBox.focus();
+    } else {
+      searchBox.style.display = "none";
     }
-  
-    document.querySelectorAll("#dropdown.active").forEach((dropdown) => {
-      if (dropdown === curDropDown) return;
-      dropdown.classList.remove("active");
-    });
   });
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const searchButton = document.querySelector('#search');
-    const searchBox = document.querySelector('#search-box');  
-  
-    searchButton.addEventListener('click', () => {
-      if (searchBox.style.display !== 'block') {
-        searchBox.style.display = 'block';
-        searchBox.focus();
-      } else {
-        searchBox.style.display = 'none';
-      }
-    });
-  
-    document.addEventListener('click', (e) => {
-      if (e.target !== searchButton && !e.target.closest('#search-box')) {
-        searchBox.style.display = 'none';
-      } 
-    });
+
+  document.addEventListener("click", (e) => {
+    if (e.target !== searchButton && !e.target.closest("#search-box")) {
+      searchBox.style.display = "none";
+    }
   });
+});

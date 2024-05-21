@@ -1,8 +1,6 @@
-
 function applyStyles(boxId) {
   const box = document.getElementById(boxId);
 
-  
   const beforeStyle = `
       #${boxId}::before {
         
@@ -53,10 +51,10 @@ function applyStyles(boxId) {
   opacity: 0.8; /* Change opacity when hovering over the box */
 }
   `;
-  
+
   // Create style elements
-  const beforeStyleElement = document.createElement('style');
-  const afterStyleElement = document.createElement('style');
+  const beforeStyleElement = document.createElement("style");
+  const afterStyleElement = document.createElement("style");
 
   beforeStyleElement.innerHTML = beforeStyle;
   afterStyleElement.innerHTML = afterStyle;
@@ -77,7 +75,6 @@ applyStyles("box7");
 applyStyles("box8");
 applyStyles("box9");
 
-
 //EXAMPLE OF USING JS TO REDIRECT TO ANOTHER PAGE USING BUTTONS
 /* <button onclick="openIndex()">
   <img
@@ -85,7 +82,9 @@ applyStyles("box9");
     alt="WordPress-logotype-wmark"
   />
 </button>; */
-
+const openDownload = () => {
+  window.location.href = "download.html";
+};
 //Button Click Redirection
 const openIndex = () => {
   window.location.href = "index.html";
@@ -171,6 +170,3 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
-
-
-

@@ -91,3 +91,8 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("active");
   });
 });
+
+
+const openDownload = () => {
+  window.location.href = "download.html";
+};

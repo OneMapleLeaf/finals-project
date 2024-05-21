@@ -5,7 +5,9 @@
     alt="WordPress-logotype-wmark"
   />
 </button>; */
-
+const openDownload = () => {
+  window.location.href = "download.html";
+};
 //Button Click Redirection
 const openIndex = () => {
     window.location.href = "index.html";
